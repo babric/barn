@@ -19,6 +19,8 @@ buildscript {
 		classpath("com.github.js6pak:tiny-remapper:c389241") {
 			transitive = false
 		}
+		classpath "net.fabricmc.unpick:unpick:${project.unpick_version}"
+		classpath "net.fabricmc.unpick:unpick-format-utils:${project.unpick_version}"
 		classpath "net.fabricmc:name-proposal:${project.name_proposal_version}"
 	}
 }
@@ -71,7 +73,10 @@ configurations {
 		extendsFrom mappingPoetJar
 		transitive = true
 	}
+	unpick
 }
+
+def unpickMetaFile = file("unpick-definitions/unpick.json")
 
 dependencies {
 	enigmaRuntime "cuchaz:enigma-swing:${project.enigma_version}"
@@ -81,6 +86,12 @@ dependencies {
 	javadocClasspath "com.google.code.findbugs:jsr305:3.0.2" // for some other jsr annotations
 	decompileClasspath "net.fabricmc:cfr:${project.cfr_version}"
 	mappingPoetJar "net.fabricmc:mappingpoet:${project.mappingpoet_version}"
+	unpick "net.fabricmc.unpick:unpick-cli:${project.unpick_version}"
+	// Update asm to allow running on JDK 18
+	unpick "org.ow2.asm:asm:9.2"
+	unpick "org.ow2.asm:asm-tree:9.2"
+	unpick "org.ow2.asm:asm-commons:9.2"
+	unpick "org.ow2.asm:asm-util:9.2"
 }
 
 def setupGroup = "jar setup"
@@ -90,7 +101,8 @@ def mapJarGroup = "jar mapping"
 def mappingsDir = file("mappings")
 def cacheFilesMinecraft = file(".gradle/minecraft")
 def tempDir = file(".gradle/temp")
-def mergedFile = file("${minecraft_version}-merged.jar")
+def intermediaryJar = file("${minecraft_version}-intermediary.jar")
+def unpickedJar = file("${minecraft_version}-intermediary-unpicked.jar")
 def namedJar = file("${minecraft_version}-named.jar")
 def versionFile = new File(cacheFilesMinecraft, "${minecraft_version}.json")
 def clientJar = new File(cacheFilesMinecraft, "${minecraft_version}-client.jar")
@@ -106,6 +118,7 @@ import cuchaz.enigma.command.CheckMappingsCommand
 import cuchaz.enigma.command.MapSpecializedMethodsCommand
 import groovy.io.FileType
 import groovy.json.JsonSlurper
+import net.fabricmc.stitch.commands.CommandFixNesting
 import net.fabricmc.stitch.commands.CommandMergeTiny
 import net.fabricmc.stitch.commands.CommandReorderTiny
 import net.fabricmc.stitch.commands.CommandRewriteIntermediary
@@ -187,7 +200,7 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 
 	doLast {
 		if (!versionFile.exists()) {
-			throw new RuntimeException("Can' t download the jars without the ${ versionFile.name } file !")
+			throw new RuntimeException("Can' t download the jars without the ${versionFile.name} file !")
 		}
 
 		//reload in case it changed
@@ -219,7 +232,7 @@ task downloadMcLibs(dependsOn: downloadWantedVersionManifest) {
 
 	doLast {
 		if (!versionFile.exists()) {
-			throw new RuntimeException("Can't download the jars without the ${ versionFile.name } file !")
+			throw new RuntimeException("Can't download the jars without the ${versionFile.name} file !")
 		}
 
 		def version = new JsonSlurper().parseText(FileUtils.readFileToString(versionFile, StandardCharsets.UTF_8))
@@ -273,18 +286,20 @@ task remapMcJars(dependsOn: [downloadMcJars, downloadMcLibs, downloadIntermediar
 task mergeJars(dependsOn: remapMcJars) {
 	group = setupGroup
 	inputs.files(serverJar, clientJar)
-	outputs.file(mergedFile)
+	outputs.file(intermediaryJar)
 
 	doLast {
 		logger.lifecycle(":merging jars")
 
-		if (mergedFile.exists()) {
+		if (intermediaryJar.exists()) {
 			return
 		}
 
-		def jarMerger = new JarMerger(clientIntermediaryJar, serverIntermediaryJar, mergedFile)
+		def jarMerger = new JarMerger(clientIntermediaryJar, serverIntermediaryJar, intermediaryJar)
 		jarMerger.merge()
 		jarMerger.close()
+
+		CommandFixNesting.run(intermediaryJar)
 	}
 
 }
@@ -323,7 +338,7 @@ task patchIntermediary(dependsOn: [mergeJars, downloadIntermediary]) {
 	doLast {
 		logger.lifecycle(":patching intermediary")
 		String[] args = [
-				mergedFile.getAbsolutePath(),
+				intermediaryJar.getAbsolutePath(),
 				intermediaryTinyInput.getAbsolutePath(),
 				outputFile.getAbsolutePath(),
 				"--writeAll"
@@ -333,14 +348,30 @@ task patchIntermediary(dependsOn: [mergeJars, downloadIntermediary]) {
 	}
 }
 
-task yarn(dependsOn: mergeJars, type: JavaExec) {
+task yarn(dependsOn: "unpickIntermediaryJar", type: JavaExec) {
+	group = yarnGroup
+
+	classpath = configurations.enigmaRuntime
+	mainClass = 'cuchaz.enigma.gui.Main'
+
+	args '-jar'
+	args unpickedJar.getAbsolutePath()
+	args '-mappings'
+	args mappingsDir.getAbsolutePath()
+	args '-profile'
+	args 'enigma_profile.json'
+
+	jvmArgs "-Xmx2048m"
+}
+
+task yarnWithoutUnpick(dependsOn: mergeJars, type: JavaExec) {
 	group = yarnGroup
 
 	classpath = configurations.enigmaRuntime
 	mainClass = "cuchaz.enigma.gui.Main"
 
 	args "-jar"
-	args mergedFile.getAbsolutePath()
+	args intermediaryJar.getAbsolutePath()
 	args "-mappings"
 	args mappingsDir.getAbsolutePath()
 	args "-profile"
@@ -356,7 +387,7 @@ task checkMappings(dependsOn: mergeJars) {
 		logger.lifecycle(":checking mappings")
 
 		String[] args = [
-				mergedFile.getAbsolutePath(),
+				intermediaryJar.getAbsolutePath(),
 				mappingsDir.getAbsolutePath()
 		]
 
@@ -383,7 +414,7 @@ task buildYarnTiny(dependsOn: mergeJars, type: FileOutput) {
 		logger.lifecycle(":generating tiny mappings")
 
 		new MapSpecializedMethodsCommand().run(
-				mergedFile.getAbsolutePath(),
+				intermediaryJar.getAbsolutePath(),
 				"enigma",
 				mappingsDir.getAbsolutePath(),
 				"tiny:intermediary:named",
@@ -418,7 +449,37 @@ task mergeTiny(dependsOn: ["buildYarnTiny", "downloadIntermediary"], type: FileO
 	}
 }
 
-task tinyJar(type: Jar, dependsOn: mergeTiny) {
+combineUnpickDefinitions {
+	group = 'unpick'
+	input = file('unpick-definitions')
+	output = new File(tempDir, 'definitions.unpick')
+}
+
+remapUnpickDefinitionsIntermediary {
+	dependsOn buildYarnTiny
+	group = 'unpick'
+	output = new File(tempDir, 'intermediary-definitions.unpick')
+	mappings = buildYarnTiny.output
+}
+
+task unpickIntermediaryJar(type: JavaExec, dependsOn: [mergeJars, "constantsJar", remapUnpickDefinitionsIntermediary]) {
+	outputs.upToDateWhen { false }
+	group "unpick"
+
+	mainClass = "daomephsta.unpick.cli.Main"
+	systemProperty "java.util.logging.config.file", file('unpick-logging.properties')
+	classpath configurations.unpick
+
+	doFirst {
+		args intermediaryJar.absolutePath, unpickedJar.absolutePath, remapUnpickDefinitionsIntermediary.output.get().asFile.absolutePath, constantsJar.archiveFile.get().asFile.absolutePath
+
+		configurations.decompileClasspath.files.each {
+			args it.absolutePath
+		}
+	}
+}
+
+task tinyJar(type: Jar, dependsOn: [mergeTiny, combineUnpickDefinitions]) {
 	group = buildMappingGroup
 	outputs.upToDateWhen { false }
 	archiveFileName = "barn-${yarnVersion}.jar"
@@ -426,6 +487,13 @@ task tinyJar(type: Jar, dependsOn: mergeTiny) {
 	classifier = ""
 	from(mergeTiny.output) {
 		rename { "mappings/mappings.tiny" }
+	}
+	from(combineUnpickDefinitions.output) {
+		rename combineUnpickDefinitions.output.get().asFile.name, "extras/definitions.unpick"
+	}
+	from (file(unpickMetaFile)) {
+		expand version: project.unpick_version
+		rename unpickMetaFile.name, "extras/unpick.json"
 	}
 	manifest {
 		attributes("Minecraft-Version-Id": minecraft_version)
@@ -467,7 +535,7 @@ clean.doFirst {
 
 tasks.build.dependsOn "compressTiny", "tinyJar"
 
-task mapNamedJar(dependsOn: ["mergeTiny"]) {
+task mapNamedJar(dependsOn: ["mergeTiny", "unpickIntermediaryJar"]) {
 	group = mapJarGroup
 	inputs.files downloadMcLibs.outputs.files.files
 	outputs.file(namedJar)
@@ -484,7 +552,7 @@ task mapNamedJar(dependsOn: ["mergeTiny"]) {
 	doLast {
 		logger.lifecycle(":mapping minecraft to named")
 
-		mapJar(namedJar, mergedFile, mergeTiny.output, libraries, "intermediary", "named") {
+		mapJar(namedJar, unpickedJar, mergeTiny.output, libraries, "intermediary", "named") {
 			it.withMappings { out ->
 				jsrToJetbrains.each { e ->
 					out.acceptClass e.key, e.value
@@ -494,12 +562,14 @@ task mapNamedJar(dependsOn: ["mergeTiny"]) {
 	}
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
+// Setup the build for the unpicked constants
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 tasks.withType(JavaCompile).configureEach {
 	it.options.encoding = "UTF-8"
-	it.options.release = 17
+	it.options.release = 8
 }
 
 sourceSets {
@@ -511,6 +581,13 @@ license {
 	header file("HEADER")
 	include "**/*.java"
 }
+
+task constantsJar(type: Jar) {
+	from sourceSets.constants.output
+	archiveClassifier = "constants"
+}
+
+build.dependsOn constantsJar
 
 def fakeSourceDir = file(".gradle/temp/fakeSource")
 task genFakeSource(type: JavaExec, dependsOn: ["mergeTiny", "mapNamedJar"]) {
@@ -623,7 +700,7 @@ task javadocJar(type: Jar, dependsOn: ["javadoc"]) {
 
 generatePackageInfoMappings {
 	dependsOn mergeJars
-	inputJar = mergedFile
+	inputJar = intermediaryJar
 	packageName = "net/minecraft/unused/packageinfo/"
 	outputDir = file("mappings/net/minecraft/unused/packageinfo")
 }
@@ -648,7 +725,11 @@ publishing {
 			}
 
 			artifact(tinyJar)
-			artifact javadocJar
+
+			artifact(constantsJar) {
+				classifier "constants"
+			}
+//			artifact javadocJar
 		}
 	}
 }
