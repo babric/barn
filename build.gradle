@@ -491,7 +491,7 @@ task tinyJar(type: Jar, dependsOn: [mergeTiny, combineUnpickDefinitions]) {
 	from(combineUnpickDefinitions.output) {
 		rename combineUnpickDefinitions.output.get().asFile.name, "extras/definitions.unpick"
 	}
-	from (file(unpickMetaFile)) {
+	from(file(unpickMetaFile)) {
 		expand version: project.unpick_version
 		rename unpickMetaFile.name, "extras/unpick.json"
 	}
@@ -729,7 +729,18 @@ publishing {
 			artifact(constantsJar) {
 				classifier "constants"
 			}
-//			artifact javadocJar
+			artifact javadocJar
+		}
+	}
+	repositories {
+		if (ENV.MAVEN_URL) {
+			maven {
+				url ENV.MAVEN_URL
+				credentials {
+					username ENV.MAVEN_USERNAME
+					password ENV.MAVEN_PASSWORD
+				}
+			}
 		}
 	}
 }
