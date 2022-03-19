@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_219 net/minecraft/client/network/ClientNetworkHandler
+	FIELD field_1969 random Ljava/util/Random;
+	FIELD field_1970 disconnected Z
+	FIELD field_1971 connection Lnet/minecraft/class_117;
+	FIELD field_1972 minecraft Lnet/minecraft/client/Minecraft;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/String;I)V
+		ARG 1 minecraft
+		ARG 2 address
+		ARG 3 port
+	METHOD method_1644 tick ()V
+	METHOD method_1648 sendPacket (Lnet/minecraft/class_169;)V
+		ARG 1 packet

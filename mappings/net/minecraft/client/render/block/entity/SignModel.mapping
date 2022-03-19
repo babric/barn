@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_546 net/minecraft/client/render/block/entity/SignModel
+	FIELD field_2418 root Lnet/minecraft/class_163;
+	FIELD field_2419 stick Lnet/minecraft/class_163;
+	METHOD method_1875 render ()V

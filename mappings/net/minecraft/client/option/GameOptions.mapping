@@ -1,0 +1,63 @@
+CLASS net/minecraft/class_322 net/minecraft/client/option/GameOptions
+	FIELD field_1442 thirdPerson Z
+	FIELD field_1443 debugHud Z
+	FIELD field_1444 lastServer Ljava/lang/String;
+	FIELD field_1446 cinematicMode Z
+	FIELD field_1450 guiScale I
+	FIELD field_1451 RENDER_DISTANCE_KEYS [Ljava/lang/String;
+	FIELD field_1452 DIFFICULTY_KEYS [Ljava/lang/String;
+	FIELD field_1453 GUI_SCALE_KEYS [Ljava/lang/String;
+	FIELD field_1454 PERFORMANCE_KEYS [Ljava/lang/String;
+	FIELD field_1455 file Ljava/io/File;
+	FIELD field_1456 musicVolume F
+	FIELD field_1457 soundVolume F
+	FIELD field_1458 mouseSensitivity F
+	FIELD field_1459 invertYMouse Z
+	FIELD field_1460 viewDistance I
+	FIELD field_1461 bobView Z
+	FIELD field_1462 anaglyph3d Z
+	FIELD field_1463 advancedOpengl Z
+	FIELD field_1464 fpsLimit I
+	FIELD field_1465 fancyGraphics Z
+	FIELD field_1466 ao Z
+	FIELD field_1467 skin Ljava/lang/String;
+	FIELD field_1468 forwardKey Lnet/minecraft/class_386;
+	FIELD field_1469 leftKey Lnet/minecraft/class_386;
+	FIELD field_1470 backKey Lnet/minecraft/class_386;
+	FIELD field_1471 rightKey Lnet/minecraft/class_386;
+	FIELD field_1472 jumpKey Lnet/minecraft/class_386;
+	FIELD field_1473 inventoryKey Lnet/minecraft/class_386;
+	FIELD field_1474 dropKey Lnet/minecraft/class_386;
+	FIELD field_1475 chatKey Lnet/minecraft/class_386;
+	FIELD field_1476 fogKey Lnet/minecraft/class_386;
+	FIELD field_1477 sneakKey Lnet/minecraft/class_386;
+	FIELD field_1478 allKeys [Lnet/minecraft/class_386;
+	FIELD field_1479 minecraft Lnet/minecraft/client/Minecraft;
+	FIELD field_1480 difficulty I
+	FIELD field_1481 hideHud Z
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/io/File;)V
+		ARG 1 minecraft
+		ARG 2 file
+	METHOD method_1224 load ()V
+	METHOD method_1225 getKeybindName (I)Ljava/lang/String;
+		ARG 1 index
+	METHOD method_1226 setKeybindKey (II)V
+		ARG 1 index
+		ARG 2 keyCode
+	METHOD method_1227 getFloat (Lnet/minecraft/class_271;)F
+		ARG 1 option
+	METHOD method_1228 setFloat (Lnet/minecraft/class_271;F)V
+		ARG 1 option
+		ARG 2 value
+	METHOD method_1229 setInt (Lnet/minecraft/class_271;I)V
+		ARG 1 option
+		ARG 2 value
+	METHOD method_1230 parseFloat (Ljava/lang/String;)F
+		ARG 1 string
+	METHOD method_1231 save ()V
+	METHOD method_1232 getKeybindKey (I)Ljava/lang/String;
+		ARG 1 index
+	METHOD method_1233 getBoolean (Lnet/minecraft/class_271;)Z
+		ARG 1 option
+	METHOD method_1234 (Lnet/minecraft/class_271;)Ljava/lang/String;
+		ARG 1 option

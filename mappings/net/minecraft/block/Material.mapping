@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_15 net/minecraft/block/Material
+	FIELD field_974 burnable Z
+	FIELD field_975 replaceable Z
+	FIELD field_979 AIR Lnet/minecraft/class_15;
+	FIELD field_980 SOLID_ORGANIC Lnet/minecraft/class_15;
+	FIELD field_981 SOIL Lnet/minecraft/class_15;
+	FIELD field_982 WOOD Lnet/minecraft/class_15;
+	FIELD field_983 STONE Lnet/minecraft/class_15;
+	FIELD field_984 METAL Lnet/minecraft/class_15;
+	FIELD field_985 WATER Lnet/minecraft/class_15;
+	FIELD field_986 LAVA Lnet/minecraft/class_15;
+	FIELD field_987 LEAVES Lnet/minecraft/class_15;

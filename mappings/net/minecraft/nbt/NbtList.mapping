@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_202 net/minecraft/nbt/NbtList
+	FIELD field_1659 value Ljava/util/List;
+	FIELD field_1660 type B
+	METHOD method_1396 get (I)Lnet/minecraft/class_187;
+		ARG 1 index
+	METHOD method_1397 add (Lnet/minecraft/class_187;)V
+		ARG 1 element
+	METHOD method_1398 size ()I

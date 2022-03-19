@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_471 net/minecraft/client/render/WorldRenderer
+	FIELD field_1806 textureManager Lnet/minecraft/class_76;

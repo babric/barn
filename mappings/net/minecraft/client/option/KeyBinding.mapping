@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_386 net/minecraft/client/option/KeyBinding
+	FIELD field_2380 translationKey Ljava/lang/String;
+	FIELD field_2381 code I
+	METHOD <init> (Ljava/lang/String;I)V
+		ARG 1 translationKey
+		ARG 2 code

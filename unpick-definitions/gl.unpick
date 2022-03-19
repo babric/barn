@@ -1,0 +1,13 @@
+v2
+
+constant draw_mode org/lwjgl/opengl/GL11 GL_LINES
+constant draw_mode org/lwjgl/opengl/GL11 GL_LINE_STRIP
+constant draw_mode org/lwjgl/opengl/GL11 GL_TRIANGLES
+constant draw_mode org/lwjgl/opengl/GL11 GL_TRIANGLE_STRIP
+constant draw_mode org/lwjgl/opengl/GL11 GL_QUADS
+
+target_method net/minecraft/client/render/Tessellator start (I)V
+	param 0 draw_mode
+
+target_method org/lwjgl/opengl/GL11 glDrawArrays (III)V
+	param 0 draw_mode

@@ -1,0 +1,33 @@
+CLASS net/minecraft/class_57 net/minecraft/entity/Entity
+	FIELD field_1591 id I
+	FIELD field_1596 world Lnet/minecraft/class_18;
+	FIELD field_1597 prevX D
+	FIELD field_1598 prevY D
+	FIELD field_1599 prevZ D
+	FIELD field_1600 x D
+	FIELD field_1601 y D
+	FIELD field_1602 z D
+	FIELD field_1603 velocityX D
+	FIELD field_1604 velocityY D
+	FIELD field_1605 velocityZ D
+	FIELD field_1606 yaw F
+	FIELD field_1607 pitch F
+	FIELD field_1608 prevYaw F
+	FIELD field_1609 prevPitch F
+	FIELD field_1610 boundingBox Lnet/minecraft/class_25;
+	FIELD field_1630 dead Z
+	FIELD field_1652 skinUrl Ljava/lang/String;
+	FIELD field_1653 capeUrl Ljava/lang/String;
+	METHOD <init> (Lnet/minecraft/class_18;)V
+		ARG 1 world
+	METHOD method_1316 updateCapeUrl ()V
+	METHOD method_1318 isAlive ()Z
+	METHOD method_1328 isInFluid (Lnet/minecraft/class_15;)Z
+	METHOD method_1346 write (Lnet/minecraft/class_8;)V
+		ARG 1 nbt
+	METHOD method_1348 read (Lnet/minecraft/class_8;)V
+		ARG 1 nbt
+	METHOD method_1363 readtNbt (Lnet/minecraft/class_8;)V
+		ARG 1 nbt
+	METHOD method_1368 writeNbt (Lnet/minecraft/class_8;)V
+		ARG 1 nbt

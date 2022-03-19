@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_10 net/minecraft/server/network/ServerNetworkHandler
+	FIELD field_360 loginPacket Lnet/minecraft/class_118;
+	FIELD field_361 serverId Ljava/lang/String;
+	METHOD method_417 disconnect (Ljava/lang/String;)V
+		ARG 1 reason
+	CLASS 1 AuthThread
+		METHOD run run ()V
+		FIELD field_362 loginPacket Lnet/minecraft/class_118;
+		FIELD field_363 networkHandler Lnet/minecraft/class_10;

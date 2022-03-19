@@ -1,0 +1,47 @@
+CLASS net/minecraft/class_26 net/minecraft/util/math/Vec3d
+	FIELD field_1585 x D
+	FIELD field_1586 y D
+	FIELD field_1587 z D
+	FIELD field_1588 cache Ljava/util/List;
+	FIELD field_1589 cacheCount I
+	METHOD <init> (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1292 resetCacheCount ()V
+	METHOD method_1293 create (DDD)Lnet/minecraft/class_26;
+		ARG 0 x
+		ARG 2 y
+		ARG 4 z
+	METHOD method_1294 distanceTo (Lnet/minecraft/class_26;)D
+		ARG 1 vec
+	METHOD method_1296 normalize ()Lnet/minecraft/class_26;
+	METHOD method_1297 createCached (DDD)Lnet/minecraft/class_26;
+	METHOD method_1298 squaredDistanceTo (Lnet/minecraft/class_26;)D
+		ARG 1 vec
+	METHOD method_1299 (Lnet/minecraft/class_26;D)Lnet/minecraft/class_26;
+		ARG 1 vec
+	METHOD method_1300 length ()D
+	METHOD method_1301 add (DDD)Lnet/minecraft/class_26;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1302 (Lnet/minecraft/class_26;D)Lnet/minecraft/class_26;
+		ARG 1 vec
+	METHOD method_1303 squaredDistanceTo (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1304 set (DDD)Lnet/minecraft/class_26;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1305 clearCache ()V
+	METHOD method_1306 rotateX (F)V
+		ARG 1 angle
+	METHOD method_1307 clone (Lnet/minecraft/class_26;)Lnet/minecraft/class_26;
+		ARG 1 vec
+	METHOD method_1308 rotateY (F)V
+		ARG 1 angle
+	METHOD method_1309 multiply (Lnet/minecraft/class_26;)Lnet/minecraft/class_26;
+		ARG 1 vec

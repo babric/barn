@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_34 net/minecraft/client/font/TextRenderer
+	METHOD method_1901 getWidth (Ljava/lang/String;)I
+		ARG 1 text
+	METHOD method_1903 drawWithShadow (Ljava/lang/String;III)V
+		ARG 1 text
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color
+	METHOD method_1905 draw (Ljava/lang/String;IIIZ)V
+		ARG 1 text
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color
+		ARG 5 shadow
+	METHOD method_1906 draw (Ljava/lang/String;III)V
+		ARG 1 text
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color

@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
+	FIELD field_1019 texture Ljava/lang/String;
+	FIELD field_1031 jumping Z
+	FIELD field_1033 movementSpeed F
+	METHOD method_934 canBreatheInWater ()Z
+	METHOD method_935 canSpawn ()Z
+	METHOD method_936 getMinAmbientSoundDelay ()I

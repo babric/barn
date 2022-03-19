@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_140 net/minecraft/block/entity/SignBlockEntity
+	FIELD field_2269 texts [Ljava/lang/String;
+	FIELD field_2270 currentRow I
+	FIELD field_2271 editable Z
+	METHOD method_1810 isEditable ()Z
+	METHOD method_1811 setEditable (Z)V
+		ARG 1 editable

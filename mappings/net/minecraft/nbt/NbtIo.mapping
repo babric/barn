@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_83 net/minecraft/nbt/NbtIo
+	METHOD method_335 write (Lnet/minecraft/class_8;Ljava/io/DataOutput;)V
+		ARG 0 nbt
+		ARG 1 output
+	METHOD method_336 writeCompressed (Lnet/minecraft/class_8;Ljava/io/OutputStream;)V
+		ARG 0 nbt
+		ARG 1 stream
+	METHOD method_337 read (Ljava/io/DataInput;)Lnet/minecraft/class_8;
+		ARG 0 stream
+	METHOD method_338 readCompressed (Ljava/io/InputStream;)Lnet/minecraft/class_8;
+		ARG 0 stream

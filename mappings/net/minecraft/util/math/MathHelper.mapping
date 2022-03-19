@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_189 net/minecraft/util/math/MathHelper
+	FIELD field_664 SINE_TABLE [F
+	METHOD method_642 sqrt (D)F
+		ARG 0 value
+	METHOD method_643 absMax (DD)D
+		ARG 0 a
+		ARG 2 b
+	METHOD method_644 sin (F)F
+		ARG 0 value
+	METHOD method_645 floot (D)I
+		ARG 0 value
+	METHOD method_646 cos (F)F
+		ARG 0 value
+	METHOD method_647 sqrt (F)F
+		ARG 0 value
+	METHOD method_648 floor (F)I
+		ARG 0 value
+	METHOD method_649 abs (F)F
+		ARG 0 value
+	METHOD method_651 isNullOrEmtpy (Ljava/lang/String;)Z
+		ARG 0 text

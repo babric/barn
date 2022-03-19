@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_197 net/minecraft/client/gui/screen/TitleScreen
+	FIELD field_716 RANDOM Ljava/util/Random;
+	FIELD field_717 ticks F
+	FIELD field_718 splashText Ljava/lang/String;
+	FIELD field_719 multiplayerButton Lnet/minecraft/class_33;

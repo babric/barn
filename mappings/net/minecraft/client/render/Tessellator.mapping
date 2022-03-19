@@ -1,0 +1,80 @@
+CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
+	FIELD field_2053 bufferSize I
+	FIELD field_2054 INSTANCE Lnet/minecraft/class_67;
+	FIELD field_2055 useTriangles Z
+	FIELD field_2057 byteBuffer Ljava/nio/ByteBuffer;
+	FIELD field_2058 intBuffer Ljava/nio/IntBuffer;
+	FIELD field_2059 floatBuffer Ljava/nio/FloatBuffer;
+	FIELD field_2060 buffer [I
+	FIELD field_2061 vertexCount I
+	FIELD field_2062 u D
+	FIELD field_2063 v D
+	FIELD field_2064 color I
+	FIELD field_2065 hasColor Z
+	FIELD field_2066 hasTexture Z
+	FIELD field_2067 hasNormals Z
+	FIELD field_2068 bufferPosition I
+	FIELD field_2069 addedVertexCount I
+	FIELD field_2070 colorDisabled Z
+	FIELD field_2071 mode I
+	FIELD field_2072 xOffset D
+	FIELD field_2073 yOffset D
+	FIELD field_2074 zOffset D
+	FIELD field_2075 normal I
+	FIELD field_2076 drawing Z
+	METHOD <init> (I)V
+		ARG 1 bufferSize
+	METHOD method_1685 draw ()V
+	METHOD method_1686 texture (DD)V
+		ARG 1 u
+		ARG 3 v
+	METHOD method_1687 vertex (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1688 vertex (DDDDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 u
+		ARG 9 v
+	METHOD method_1689 color (FFF)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+	METHOD method_1690 color (FFFF)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+		ARG 4 a
+	METHOD method_1691 start (I)V
+		ARG 1 mode
+	METHOD method_1692 color (II)V
+		ARG 1 rgb
+		ARG 2 a
+	METHOD method_1693 color (III)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+	METHOD method_1694 color (IIII)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+		ARG 4 a
+	METHOD method_1695 startQuads ()V
+	METHOD method_1696 translate (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1697 normal (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1698 color (I)V
+		ARG 1 rgb
+	METHOD method_1699 disableColor ()V
+	METHOD method_1700 translate (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1701 reset ()V

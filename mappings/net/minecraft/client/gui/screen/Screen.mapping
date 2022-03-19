@@ -1,0 +1,45 @@
+CLASS net/minecraft/class_32 net/minecraft/client/gui/screen/Screen
+	FIELD field_150 selectedButton Lnet/minecraft/class_33;
+	FIELD field_151 minecraft Lnet/minecraft/client/Minecraft;
+	FIELD field_152 width I
+	FIELD field_153 height I
+	FIELD field_154 buttons Ljava/util/List;
+	FIELD field_156 textRenderer Lnet/minecraft/class_34;
+	METHOD method_117 keyPressed (CI)V
+		ARG 1 character
+		ARG 2 keyCode
+	METHOD method_118 render (IIF)V
+		ARG 1 mouseX
+		ARG 2 mouseY
+		ARG 3 delta
+	METHOD method_119 init ()V
+	METHOD method_120 buttonClicked (Lnet/minecraft/class_33;)V
+		ARG 1 button
+	METHOD method_121 shouldPause ()Z
+	METHOD method_122 tick ()V
+	METHOD method_123 renderBackground (I)V
+		ARG 1 vOffset
+	METHOD method_124 mouseClicked (III)V
+		ARG 1 mouseX
+		ARG 2 mouseY
+		ARG 3 button
+	METHOD method_125 init (Lnet/minecraft/client/Minecraft;II)V
+		ARG 1 minecraft
+		ARG 2 width
+		ARG 3 height
+	METHOD method_126 confirmed (ZI)V
+		ARG 1 confirmed
+		ARG 2 id
+	METHOD method_127 renderBackgroundTexture (I)V
+		ARG 1 vOFfset
+	METHOD method_128 mouseReleased (III)V
+		ARG 1 mouseX
+		ARG 2 mouseY
+		ARG 3 button
+	METHOD method_129 getClipboard ()Ljava/lang/String;
+	METHOD method_130 tickInput ()V
+	METHOD method_131 onMouseEvent ()V
+	METHOD method_132 onKeyboardEvent ()V
+	METHOD method_133 removed ()V
+	METHOD method_134 renderBackground ()V
+	METHOD method_135 handleTab ()V

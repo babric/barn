@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_134 net/minecraft/inventory/Inventory
+	METHOD method_947 markDirty ()V
+	METHOD method_948 size ()I
+	METHOD method_949 removeStack (II)Lnet/minecraft/class_31;
+		ARG 1 slot
+		ARG 2 amount
+	METHOD method_950 setStack (ILnet/minecraft/class_31;)V
+		ARG 1 slot
+		ARG 2 stack
+	METHOD method_951 canPlayerUse (Lnet/minecraft/class_54;)Z
+		ARG 1 player
+	METHOD method_952 getName ()Ljava/lang/String;
+	METHOD method_953 getMaxCountPerStack ()I
+	METHOD method_954 getStack (I)Lnet/minecraft/class_31;
+		ARG 1 slot

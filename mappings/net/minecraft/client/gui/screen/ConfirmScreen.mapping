@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_565 net/minecraft/client/gui/screen/ConfirmScreen
+	FIELD field_2394 parent Lnet/minecraft/class_32;
+	FIELD field_2395 message1 Ljava/lang/String;
+	FIELD field_2396 message2 Ljava/lang/String;
+	FIELD field_2397 confirmText Ljava/lang/String;
+	FIELD field_2398 cancelText Ljava/lang/String;
+	FIELD field_2399 id I
+	METHOD <init> (Lnet/minecraft/class_32;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+		ARG 1 parent
+		ARG 2 message1
+		ARG 3 message2
+		ARG 4 confirmText
+		ARG 5 cancelText
+		ARG 6 id

@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_580 net/minecraft/client/network/MultiplayerClientPlayerEntity
+	FIELD field_2505 networkHandler Lnet/minecraft/class_219;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/class_18;Lnet/minecraft/class_237;Lnet/minecraft/class_219;)V
+		ARG 1 minecraft
+		ARG 2 world
+		ARG 3 session
+		ARG 4 networkHandler

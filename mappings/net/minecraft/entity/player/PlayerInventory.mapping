@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_136 net/minecraft/entity/player/PlayerInventory
+	FIELD field_745 main [Lnet/minecraft/class_31;
+	FIELD field_746 armor [Lnet/minecraft/class_31;
+	FIELD field_747 selectedSlot I
+	FIELD field_748 player Lnet/minecraft/class_54;
+	FIELD field_749 dirty Z
+	FIELD field_750 cursorStack Lnet/minecraft/class_31;
+	METHOD <init> (Lnet/minecraft/class_54;)V
+		ARG 1 player
+	METHOD method_675 getSelectedItem ()Lnet/minecraft/class_31;
+	METHOD method_677 setCursorStack (Lnet/minecraft/class_31;)V
+		ARG 1 cursorStack
+	METHOD method_689 getCursorStack ()Lnet/minecraft/class_31;

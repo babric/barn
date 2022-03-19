@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_130 net/minecraft/client/texture/ImageDownload
+	FIELD field_492 image Ljava/awt/image/BufferedImage;
+	FIELD field_494 textureId I
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_131;)V
+		ARG 1 url
+		ARG 2 textureProcessor
+	CLASS 1 Thread
+		METHOD run run ()V
+		FIELD field_496 url Ljava/lang/String;
+		FIELD field_497 processor Lnet/minecraft/class_131;
+		FIELD field_498 data Lnet/minecraft/class_130;

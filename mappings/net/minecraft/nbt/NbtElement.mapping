@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_187 net/minecraft/nbt/NbtElement
+	FIELD field_660 key Ljava/lang/String;
+	METHOD method_623 createTypeFromId (B)Lnet/minecraft/class_187;
+		ARG 0 id
+	METHOD method_624 writeTag (Lnet/minecraft/class_187;Ljava/io/DataOutput;)V
+		ARG 0 element
+		ARG 1 output
+	METHOD method_625 setKey (Ljava/lang/String;)Lnet/minecraft/class_187;
+		ARG 1 key
+	METHOD method_626 getKey ()Ljava/lang/String;
+	METHOD method_627 getTypeNameFromId (B)Ljava/lang/String;
+		ARG 0 id
+	METHOD method_628 readTag (Ljava/io/DataInput;)Lnet/minecraft/class_187;
+		ARG 0 input
+	METHOD method_629 getType ()B
+	METHOD method_630 read (Ljava/io/DataInput;)V
+		ARG 1 input
+	METHOD method_631 write (Ljava/io/DataOutput;)V
+		ARG 1 output

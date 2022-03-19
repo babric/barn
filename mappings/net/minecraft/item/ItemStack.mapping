@@ -1,0 +1,59 @@
+CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
+	FIELD field_751 count I
+	FIELD field_753 itemId I
+	FIELD field_754 damage I
+	METHOD <init> (III)V
+		ARG 1 id
+		ARG 2 count
+		ARG 3 damage
+	METHOD <init> (Lnet/minecraft/class_124;)V
+		ARG 1 item
+	METHOD <init> (Lnet/minecraft/class_124;I)V
+		ARG 1 item
+		ARG 2 count
+	METHOD <init> (Lnet/minecraft/class_124;II)V
+		ARG 1 item
+		ARG 2 count
+		ARG 3 damage
+	METHOD <init> (Lnet/minecraft/class_17;)V
+		ARG 1 block
+	METHOD <init> (Lnet/minecraft/class_17;I)V
+		ARG 1 block
+		ARG 2 count
+	METHOD <init> (Lnet/minecraft/class_17;II)V
+		ARG 1 block
+		ARG 2 count
+		ARG 3 damage
+	METHOD <init> (Lnet/minecraft/class_8;)V
+		ARG 1 nbt
+	METHOD method_694 getItem ()Lnet/minecraft/class_124;
+	METHOD method_695 split (I)Lnet/minecraft/class_31;
+		ARG 1 count
+	METHOD method_697 damage (ILnet/minecraft/class_57;)V
+		ARG 1 amount
+		ARG 2 entity
+	METHOD method_702 isItemEqual (Lnet/minecraft/class_31;)Z
+		ARG 1 stack
+	METHOD method_703 areEqual (Lnet/minecraft/class_31;Lnet/minecraft/class_31;)Z
+		ARG 0 left
+		ARG 1 right
+	METHOD method_706 writeNbt (Lnet/minecraft/class_8;)Lnet/minecraft/class_8;
+		ARG 1 nbt
+	METHOD method_709 getMaxCount ()I
+	METHOD method_710 setDamage (I)V
+		ARG 1 damage
+	METHOD method_712 clone (Lnet/minecraft/class_31;)Lnet/minecraft/class_31;
+		ARG 0 stack
+	METHOD method_713 readNbt (Lnet/minecraft/class_8;)V
+		ARG 1 nbt
+	METHOD method_715 isStackable ()Z
+	METHOD method_716 equals (Lnet/minecraft/class_31;)Z
+		ARG 1 stack
+	METHOD method_717 isDamageable ()Z
+	METHOD method_718 equals2 (Lnet/minecraft/class_31;)Z
+		ARG 1 stack
+	METHOD method_720 isDamaged ()Z
+	METHOD method_722 getDamage ()I
+	METHOD method_723 getMaxDamage ()I
+	METHOD method_724 clone ()Lnet/minecraft/class_31;
+	METHOD method_726 getTranslationKey ()Ljava/lang/String;

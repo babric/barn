@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_522 net/minecraft/nbt/NbtString
+	FIELD field_2190 value Ljava/lang/String;

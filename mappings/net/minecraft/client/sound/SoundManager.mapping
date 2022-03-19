@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_617 net/minecraft/client/sound/SoundManager
+	FIELD field_2667 soundSystem Lpaulscode/sound/SoundSystem;
+	METHOD method_2011 loadSound (Ljava/lang/String;Ljava/io/File;)V
+	METHOD method_2016 loadStreaming (Ljava/lang/String;Ljava/io/File;)V
+	METHOD method_2018 loadMusic (Ljava/lang/String;Ljava/io/File;)V

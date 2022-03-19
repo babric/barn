@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_214 net/minecraft/client/util/GlAllocationUtils
+	FIELD field_795 DISPLAY_LISTS Ljava/util/List;
+	FIELD field_796 TEXTURE_NAMES Ljava/util/List;
+	METHOD method_740 clear ()V
+	METHOD method_741 generateDisplayLists (I)I
+		ARG 0 range
+	METHOD method_742 generateTextureNames (Ljava/nio/IntBuffer;)V
+		ARG 0 textures
+	METHOD method_743 deleteDisplayLists (I)V
+		ARG 0 index
+	METHOD method_744 allocateByteBuffer (I)Ljava/nio/ByteBuffer;
+		ARG 0 size
+	METHOD method_745 allocateIntBuffer (I)Ljava/nio/IntBuffer;
+		ARG 0 size
+	METHOD method_746 allocateFloatBuffer (I)Ljava/nio/FloatBuffer;
+		ARG 0 size

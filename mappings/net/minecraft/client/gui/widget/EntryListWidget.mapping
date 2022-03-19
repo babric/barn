@@ -1,0 +1,41 @@
+CLASS net/minecraft/class_97 net/minecraft/client/gui/widget/EntryListWidget
+	FIELD field_1528 minecraft Lnet/minecraft/client/Minecraft;
+	FIELD field_1529 width I
+	FIELD field_1530 height I
+	FIELD field_1531 right I
+	FIELD field_1532 left I
+	FIELD field_1533 scrollUpButtonId I
+	FIELD field_1534 scrollDownButtonId I
+	FIELD field_1535 top I
+	FIELD field_1536 bottom I
+	FIELD field_1537 itemHeight I
+	FIELD field_1540 scrollAmount F
+	METHOD <init> (Lnet/minecraft/client/Minecraft;IIIII)V
+		ARG 1 minecraft
+		ARG 2 width
+		ARG 3 height
+		ARG 4 top
+		ARG 5 bottom
+		ARG 6 itemHeight
+	METHOD method_1256 render (IIF)V
+		ARG 1 mouseX
+		ARG 2 mouseY
+	METHOD method_1257 renderBackground (IIII)V
+	METHOD method_1258 registerButtons (Ljava/util/List;II)V
+		ARG 2 scrollUp
+		ARG 3 scrollDown
+	METHOD method_1259 buttonClicked (Lnet/minecraft/class_33;)V
+		ARG 1 button
+	METHOD method_1264 renderEntry (IIIILnet/minecraft/class_67;)V
+		ARG 1 index
+		ARG 2 x
+		ARG 3 y
+		ARG 5 tesselator
+	METHOD method_1266 getEntryCount ()I
+	METHOD method_1267 entryClicked (IZ)V
+		ARG 1 index
+		ARG 2 doubleClick
+	METHOD method_1268 getEntriesHeight ()I
+	METHOD method_1269 renderBackground ()V
+	METHOD method_1270 isSelectedEntry (I)Z
+		ARG 1 index

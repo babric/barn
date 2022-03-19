@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_240 net/minecraft/network/NetworkHandler
+	METHOD method_1422 handleInteractEntity (Lnet/minecraft/class_1;)V
+	METHOD method_1426 handlePlayerAction (Lnet/minecraft/class_228;)V
+	METHOD method_1434 handleClientCommand (Lnet/minecraft/class_431;)V
+	METHOD method_1435 handleUpdateSign (Lnet/minecraft/class_432;)V
+	METHOD method_1471 handleHandshake (Lnet/minecraft/class_281;)V
+	METHOD method_1472 handleLoginHello (Lnet/minecraft/class_118;)V

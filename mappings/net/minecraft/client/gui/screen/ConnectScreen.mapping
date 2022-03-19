@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_595 net/minecraft/client/gui/screen/ConnectScreen
+	FIELD field_2580 networkHandler Lnet/minecraft/class_219;
+	FIELD field_2581 connectingCancelled Z
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/String;I)V
+		ARG 1 minecraft
+		ARG 2 address
+		ARG 3 port

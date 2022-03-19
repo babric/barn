@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_608 net/minecraft/MultiplayerInteractionManager
+	FIELD field_2616 networkHandler Lnet/minecraft/class_219;

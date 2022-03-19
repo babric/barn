@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1 net/minecraft/network/packet/play/PlayerInteractEntityPacket
+	FIELD field_1 playerId I
+	FIELD field_2 entityId I
+	FIELD field_3 isLeftClick I
+	METHOD <init> (III)V
+		ARG 1 playerId
+		ARG 2 entityId
+		ARG 3 isLeftClick

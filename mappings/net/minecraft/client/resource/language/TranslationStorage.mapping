@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_300 net/minecraft/client/resource/language/TranslationStorage
+	FIELD field_1173 INSTANCE Lnet/minecraft/class_300;
+	FIELD field_1174 translations Ljava/util/Properties;
+	METHOD method_992 getInstance ()Lnet/minecraft/class_300;
+	METHOD method_993 get (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 key
+	METHOD method_994 get (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+		ARG 1 key
+		ARG 2 args

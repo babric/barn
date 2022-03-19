@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_293 net/minecraft/client/gui/screen/container/ContainerScreen
+	FIELD field_1152 backgroundWidth I
+	FIELD field_1153 backgroundHeight I
+	FIELD field_1154 container Lnet/minecraft/class_71;
+	FIELD field_1155 itemRenderer Lnet/minecraft/class_92;
+	METHOD <init> (Lnet/minecraft/class_71;)V
+		ARG 1 container
+	METHOD method_984 drawBackground (F)V
+		ARG 1 tickDelta
+	METHOD method_985 drawForeground ()V
+	METHOD method_986 getSlotAt (II)Lnet/minecraft/class_133;
+		ARG 1 x
+		ARG 2 y
+	METHOD method_987 drawSlot (Lnet/minecraft/class_133;)V
+		ARG 1 slot
+	METHOD method_988 isPointOverSlot (Lnet/minecraft/class_133;II)Z
+		ARG 1 slot
+		ARG 2 x
+		ARG 3 y

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_578 net/minecraft/client/render/entity/EntityRenderDispatcher
+	FIELD field_2503 renderers Ljava/util/Map;
+	METHOD method_1918 get (Ljava/lang/Class;)Lnet/minecraft/class_579;
+		ARG 1 entityClass
+	METHOD method_1919 get (Lnet/minecraft/class_57;)Lnet/minecraft/class_579;
+		ARG 1 entity

@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_117 net/minecraft/network/Connection
+	FIELD field_1281 socket Ljava/net/Socket;
+	FIELD field_1283 inputStream Ljava/io/DataInputStream;
+	FIELD field_1284 outputStream Ljava/io/DataOutputStream;
+	METHOD method_1123 sendPacket (Lnet/minecraft/class_169;)V
+	METHOD method_1124 disconnect (Ljava/lang/Exception;)V
+		ARG 1 exception
+	METHOD method_1125 disconnect (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 reason
+		ARG 2 args

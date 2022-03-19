@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_545 net/minecraft/client/render/block/entity/SignBlockEntityRenderer
+	FIELD field_2268 model Lnet/minecraft/class_546;

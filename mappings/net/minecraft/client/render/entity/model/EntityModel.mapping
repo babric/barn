@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_173 net/minecraft/client/render/entity/model/EntityModel
+	FIELD field_1427 handWingProgress F
+	FIELD field_1428 riding Z
+	METHOD method_1209 animateModel (Lnet/minecraft/class_127;FFF)V
+		ARG 1 entity
+		ARG 2 limbAngle
+		ARG 3 limbDistance
+		ARG 4 tickDelta
+	METHOD method_1210 setAngles (FFFFFF)V
+		ARG 1 limbAngle
+		ARG 2 limbDistance
+		ARG 3 animationProgress
+		ARG 4 headYaw
+		ARG 5 headPitch
+		ARG 6 scale
+	METHOD method_1211 render (FFFFFF)V
+		ARG 1 limbAngle
+		ARG 2 limbDistance
+		ARG 3 animationProgress
+		ARG 4 headYaw
+		ARG 5 headPitch
+		ARG 6 scale

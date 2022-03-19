@@ -1,0 +1,8 @@
+v2
+
+constant c2s_client_command_mode net/fabricmc/yarn/constants/network/ClientCommandMode PRESS_SHIFT_KEY
+constant c2s_client_command_mode net/fabricmc/yarn/constants/network/ClientCommandMode RELEASE_SHIFT_KEY
+constant c2s_client_command_mode net/fabricmc/yarn/constants/network/ClientCommandMode STOP_SLEEPING
+
+target_method net/minecraft/network/packet/c2s/play/ClientCommandC2SPacket <init> (Lnet/minecraft/entity/Entity;I)V
+	param 1 c2s_client_command_mode

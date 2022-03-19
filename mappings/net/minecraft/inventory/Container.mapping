@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_71 net/minecraft/inventory/Container
+	FIELD field_2731 revision S
+	FIELD field_2733 trackedStacks Ljava/util/List;
+	FIELD field_2734 slots Ljava/util/List;
+	FIELD field_2735 syncId I
+	METHOD method_2078 onSlotClick (IIZLnet/minecraft/class_54;)Lnet/minecraft/class_31;
+		ARG 1 slotId
+		ARG 2 button
+		ARG 3 shift
+		ARG 4 player
+	METHOD method_2090 nextRevision (Lnet/minecraft/class_136;)S
+		ARG 1 inventory

@@ -1,0 +1,36 @@
+CLASS net/minecraft/class_33 net/minecraft/client/gui/widget/ButtonWidget
+	FIELD field_1368 width I
+	FIELD field_1369 height I
+	FIELD field_1370 x I
+	FIELD field_1371 y I
+	FIELD field_1372 text Ljava/lang/String;
+	FIELD field_1373 id I
+	FIELD field_1374 active Z
+	FIELD field_1375 visible Z
+	METHOD <init> (IIIIILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 x
+		ARG 3 y
+		ARG 4 width
+		ARG 5 height
+		ARG 6 text
+	METHOD <init> (IIILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 x
+		ARG 3 y
+		ARG 4 text
+	METHOD method_1185 mouseReleased (II)V
+		ARG 1 mouseX
+		ARG 2 mouseY
+	METHOD method_1186 render (Lnet/minecraft/client/Minecraft;II)V
+		ARG 1 minecraft
+		ARG 2 mouseX
+		ARG 3 mouseY
+	METHOD method_1188 (Lnet/minecraft/client/Minecraft;II)V
+		ARG 1 minecraft
+		ARG 2 mouseX
+		ARG 3 mouseY
+	METHOD method_1189 isMouseOver (Lnet/minecraft/client/Minecraft;II)Z
+		ARG 1 minecraft
+		ARG 2 mouseX
+		ARG 3 mouseY

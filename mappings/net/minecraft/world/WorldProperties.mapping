@@ -1,0 +1,72 @@
+CLASS net/minecraft/class_7 net/minecraft/world/WorldProperties
+	FIELD field_13 seed J
+	FIELD field_14 spawnX I
+	FIELD field_15 spawnY I
+	FIELD field_16 spawnZ I
+	FIELD field_17 time J
+	FIELD field_18 lastPlayed J
+	FIELD field_19 sizeOnDisk J
+	FIELD field_20 playerNbt Lnet/minecraft/class_8;
+	FIELD field_21 dimensionId I
+	FIELD field_22 name Ljava/lang/String;
+	FIELD field_23 version I
+	FIELD field_24 raining Z
+	FIELD field_25 rainTime I
+	FIELD field_26 thundering Z
+	FIELD field_27 thunderTime I
+	METHOD <init> (JLjava/lang/String;)V
+		ARG 1 seed
+		ARG 3 name
+	METHOD <init> (Lnet/minecraft/class_7;)V
+		ARG 1 propeties
+	METHOD <init> (Lnet/minecraft/class_8;)V
+		ARG 1 nbt
+	METHOD method_10 setThundering (Z)V
+		ARG 1 thundering
+	METHOD method_11 getSeed ()J
+	METHOD method_12 getThunderTime (I)V
+		ARG 1 thunderTime
+	METHOD method_13 setSizeOnDisk (J)V
+		ARG 1 sizeOnDisk
+	METHOD method_14 setRaining (Z)V
+		ARG 1 raining
+	METHOD method_15 getSpawnX ()I
+	METHOD method_16 setRainTime (I)V
+		ARG 1 rainTime
+	METHOD method_17 getSpawnY ()I
+	METHOD method_18 getSpawnZ ()I
+	METHOD method_19 getTime ()J
+	METHOD method_20 getSizeOnDisk ()J
+	METHOD method_21 getDimensionId ()I
+	METHOD method_22 getVersion ()I
+	METHOD method_23 getThundering ()Z
+	METHOD method_24 getThunderTime ()I
+	METHOD method_25 getRaining ()Z
+	METHOD method_26 getRainTime ()I
+	METHOD method_27 setSpawnX (I)V
+		ARG 1 spawnX
+	METHOD method_28 setPlayerNbt (Lnet/minecraft/class_8;)V
+		ARG 1 playerNbt
+	METHOD method_29 setSpawnY (I)V
+		ARG 1 spawnY
+	METHOD method_3 asNbt ()Lnet/minecraft/class_8;
+	METHOD method_30 setSpawnZ (I)V
+		ARG 1 spawnZ
+	METHOD method_31 getPlayerNbt ()Lnet/minecraft/class_8;
+	METHOD method_32 getName ()Ljava/lang/String;
+	METHOD method_33 setLastPlayed ()J
+	METHOD method_4 setVersion (I)V
+		ARG 1 version
+	METHOD method_5 setSpawn (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_6 setTime (J)V
+		ARG 1 time
+	METHOD method_7 updateProperties (Lnet/minecraft/class_8;Lnet/minecraft/class_8;)V
+		ARG 1 nbt
+		ARG 2 playerNbt
+	METHOD method_8 setName (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD method_9 asNbt (Ljava/util/List;)Lnet/minecraft/class_8;
+		ARG 1 players

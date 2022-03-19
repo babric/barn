@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_552 net/minecraft/client/model/Quad
+	FIELD field_2518 vertices [Lnet/minecraft/class_290;
+	FIELD field_2519 verticesCount I
+	METHOD <init> ([Lnet/minecraft/class_290;)V
+		ARG 1 vertices
+	METHOD <init> ([Lnet/minecraft/class_290;IIII)V
+		ARG 1 vertices
+		ARG 2 u1
+		ARG 3 v1
+		ARG 4 u2
+		ARG 5 v2
+	METHOD method_1925 flip ()V
+	METHOD method_1926 render (Lnet/minecraft/class_67;F)V
+		ARG 1 tessellator

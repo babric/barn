@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_76 net/minecraft/client/texture/TextureManager
+	FIELD field_1246 textures Ljava/util/HashMap;
+	FIELD field_1248 images Ljava/util/HashMap;
+	FIELD field_1252 downloadedImages Ljava/util/Map;
+	FIELD field_1253 gameOptions Lnet/minecraft/class_322;
+	METHOD method_1085 delete (I)V
+		ARG 1 textureId
+	METHOD method_1094 downloadImage (Ljava/lang/String;Lnet/minecraft/class_131;)Lnet/minecraft/class_130;
+		ARG 1 url
+		ARG 2 processor
+	METHOD method_1097 bindTexture (I)V
+		ARG 1 id
+	METHOD method_1100 getTextureId (Ljava/lang/String;)I
+		ARG 1 path
+	METHOD method_1102 releaseImage (Ljava/lang/String;)V
+		ARG 1 url

@@ -1,0 +1,26 @@
+CLASS net/minecraft/class_133 net/minecraft/screen/slot/Slot
+	FIELD field_499 id I
+	FIELD field_500 x I
+	FIELD field_501 y I
+	FIELD field_502 index I
+	FIELD field_503 inventory Lnet/minecraft/class_134;
+	METHOD <init> (Lnet/minecraft/class_134;III)V
+		ARG 1 inventory
+		ARG 2 index
+		ARG 3 x
+		ARG 4 y
+	METHOD method_472 getStack ()Lnet/minecraft/class_31;
+	METHOD method_473 takeStack (I)Lnet/minecraft/class_31;
+		ARG 1 amount
+	METHOD method_474 onCrafted (Lnet/minecraft/class_31;)V
+		ARG 1 stack
+	METHOD method_475 equals (Lnet/minecraft/class_134;I)Z
+		ARG 1 inventory
+		ARG 2 index
+	METHOD method_476 hasStack ()Z
+	METHOD method_477 canInsert (Lnet/minecraft/class_31;)Z
+		ARG 1 stack
+	METHOD method_478 markDirty ()V
+	METHOD method_479 setStack (Lnet/minecraft/class_31;)V
+		ARG 1 stack
+	METHOD method_480 getMaxItemCount ()I

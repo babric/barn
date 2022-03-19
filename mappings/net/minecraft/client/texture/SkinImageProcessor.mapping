@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_570 net/minecraft/client/texture/SkinImageProcessor
+	FIELD field_2445 data [I
+	FIELD field_2446 width I
+	FIELD field_2447 height I
+	METHOD method_1898 (IIII)V
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 x2
+		ARG 4 y2
+	METHOD method_1899 (IIII)V
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 x2
+		ARG 4 y2
+	METHOD method_1900 (IIII)Z
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 x2
+		ARG 4 y2

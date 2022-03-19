@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_28 net/minecraft/client/resource/ResourceDownloadThread
+	FIELD field_137 resourcesDirectory Ljava/io/File;
+	FIELD field_138 minecraft Lnet/minecraft/client/Minecraft;
+	FIELD field_139 cancelled Z
+	METHOD <init> (Ljava/io/File;Lnet/minecraft/client/Minecraft;)V
+		ARG 1 runDirectory
+		ARG 2 minecraft
+	METHOD method_107 reload ()V
+	METHOD method_108 loadFromDirectory (Ljava/io/File;Ljava/lang/String;)V
+		ARG 1 directory
+		ARG 2 type
+	METHOD method_109 downloadFile (Ljava/net/URL;Ljava/io/File;J)V
+		ARG 1 url
+		ARG 2 destinationFile
+		ARG 3 size
+	METHOD method_110 loadFromUrl (Ljava/net/URL;Ljava/lang/String;JI)V
+		ARG 1 url
+		ARG 2 path
+		ARG 3 size
+		ARG 5 type
+	METHOD method_111 cancel ()V
+	METHOD run run ()V

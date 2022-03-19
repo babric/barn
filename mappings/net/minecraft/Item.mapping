@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_124 net/minecraft/Item
+	FIELD field_402 maxDamage I
+	FIELD field_455 random Ljava/util/Random;
+	FIELD field_461 id I
+	FIELD field_462 maxCount I
+	FIELD field_467 translationKey Ljava/lang/String;
+	FIELD field_468 ITEMS [Lnet/minecraft/class_124;
+	METHOD method_442 getTranslationKey (Lnet/minecraft/class_31;)Ljava/lang/String;
+		ARG 1 stack
+	METHOD method_443 getTranslationKey ()Ljava/lang/String;
+	METHOD method_459 getMaxCount ()I
+	METHOD method_463 setMaxDamage (I)Lnet/minecraft/class_124;
+		ARG 1 maxDamage
+	METHOD method_464 getMaxDamage ()I

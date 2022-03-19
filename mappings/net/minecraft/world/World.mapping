@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_18 net/minecraft/world/World
+	FIELD field_180 isRemote Z
+	FIELD field_220 properties Lnet/minecraft/class_7;
+	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_50;)V
+		ARG 1 world
+		ARG 2 dimension
+	METHOD <init> (Lnet/minecraft/class_52;Ljava/lang/String;J)V
+		ARG 2 name
+		ARG 3 seed
+	METHOD <init> (Lnet/minecraft/class_52;Ljava/lang/String;JLnet/minecraft/class_50;)V
+		ARG 2 name
+		ARG 3 seed
+		ARG 5 dimension
+	METHOD <init> (Lnet/minecraft/class_52;Ljava/lang/String;Lnet/minecraft/class_50;J)V
+		ARG 1 dimensionData
+		ARG 2 name
+		ARG 3 dimension
+		ARG 4 seed
+	METHOD method_159 setTime (J)V
+		ARG 1 time
+	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z
+		ARG 1 box
+	METHOD method_211 getEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
+	METHOD method_254 getSeed ()J
+	METHOD method_256 getTime ()J
+	METHOD method_258 getSpawnPos ()Lnet/minecraft/class_63;
+	METHOD method_276 setSpawnPos (Lnet/minecraft/class_63;)V
+		ARG 1 pos

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_211 net/minecraft/client/gui/screen/ChatScreen
+	FIELD field_786 text Ljava/lang/String;
+	FIELD field_787 focusedTicks I
+	FIELD field_788 VALID_CHARACTERS Ljava/lang/String;

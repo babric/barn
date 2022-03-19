@@ -1,0 +1,62 @@
+CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
+	FIELD field_2765 applet Lnet/minecraft/client/MinecraftApplet;
+	FIELD field_2766 soundManager Lnet/minecraft/class_617;
+	FIELD field_2772 failedSessionCheckTime J
+	FIELD field_2774 running Z
+	FIELD field_2775 debugText Ljava/lang/String;
+	FIELD field_2780 lastTickTime J
+	FIELD field_2781 fullscreen Z
+	FIELD field_2782 crashed Z
+	FIELD field_2784 timer Lnet/minecraft/class_559;
+	FIELD field_2785 resourceDownloadThread Lnet/minecraft/class_28;
+	FIELD field_2786 ticksPlayed I
+	FIELD field_2790 runDirectory Ljava/io/File;
+	FIELD field_2791 INSTANCE Lnet/minecraft/client/Minecraft;
+	FIELD field_2797 runDirectoryCache Ljava/io/File;
+	FIELD field_2801 interactionManager Lnet/minecraft/class_504;
+	FIELD field_2802 displayWidth I
+	FIELD field_2803 displayHeight I
+	FIELD field_2804 world Lnet/minecraft/class_18;
+	FIELD field_2805 worldRenderer Lnet/minecraft/class_471;
+	FIELD field_2806 player Lnet/minecraft/class_40;
+	FIELD field_2809 session Lnet/minecraft/class_237;
+	FIELD field_2811 canvas Ljava/awt/Canvas;
+	FIELD field_2812 isApplet Z
+	FIELD field_2813 paused Z
+	FIELD field_2814 textureManager Lnet/minecraft/class_76;
+	FIELD field_2815 textRenderer Lnet/minecraft/class_34;
+	FIELD field_2816 currentScreen Lnet/minecraft/class_32;
+	FIELD field_2820 inGameHud Lnet/minecraft/class_588;
+	FIELD field_2824 options Lnet/minecraft/class_322;
+	METHOD <init> (Ljava/awt/Component;Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V
+		ARG 2 canvas
+		ARG 3 applet
+		ARG 4 width
+		ARG 5 height
+		ARG 6 fullscreen
+	METHOD method_2104 startSessionCheck ()V
+	METHOD method_2105 forceResourceReload ()V
+	METHOD method_2106 init ()V
+	METHOD method_2112 setScreen (Lnet/minecraft/class_32;)V
+		ARG 1 screen
+	METHOD method_2113 setWorld (Lnet/minecraft/class_18;)V
+	METHOD method_2116 getApplicationDirectory (Ljava/lang/String;)Ljava/io/File;
+		ARG 0 name
+	METHOD method_2118 loadResource (Ljava/lang/String;Ljava/io/File;)V
+		ARG 1 path
+		ARG 2 file
+	METHOD method_2123 getRunDirectory ()Ljava/io/File;
+	METHOD method_2124 isCommand (Ljava/lang/String;)Z
+		ARG 1 message
+	METHOD method_2128 logGlError (Ljava/lang/String;)V
+		ARG 1 phase
+	METHOD method_2129 stop ()V
+	METHOD method_2132 scheduleStop ()V
+	METHOD method_2136 toggleFullscreen ()V
+	METHOD method_2137 tick ()V
+	METHOD method_2138 isWorldRemote ()Z
+	METHOD method_2145 getNetworkHandler ()Lnet/minecraft/class_219;
+	METHOD method_2151 getOperatingSystem ()Lnet/minecraft/class_531;
+	CLASS class_636 TimerHackThread
+	CLASS class_639 SessionCheckThread
+		METHOD run run ()V

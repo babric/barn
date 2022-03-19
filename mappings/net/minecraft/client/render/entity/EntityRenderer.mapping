@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_579 net/minecraft/client/render/entity/EntityRenderer
+	FIELD field_2677 dispatcher Lnet/minecraft/class_578;
+	METHOD method_2022 render (Lnet/minecraft/class_57;DDDFF)V
+		ARG 1 entity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD method_2029 setDispatcher (Lnet/minecraft/class_578;)V

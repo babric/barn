@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_615 net/minecraft/client/gui/screen/ingame/SignEditScreen
+	FIELD field_2655 title Ljava/lang/String;
+	FIELD field_2656 sign Lnet/minecraft/class_140;
+	FIELD field_2657 ticksSinceOpened I
+	FIELD field_2658 currentRow I
+	FIELD field_2659 VALID_CHARACTERS Ljava/lang/String;
+	METHOD <init> (Lnet/minecraft/class_140;)V
+		ARG 1 sign

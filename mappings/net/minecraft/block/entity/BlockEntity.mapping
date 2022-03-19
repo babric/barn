@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_55 net/minecraft/block/entity/BlockEntity
+	FIELD field_1238 world Lnet/minecraft/class_18;
+	FIELD field_1239 x I
+	FIELD field_1240 y I
+	FIELD field_1241 z I
+	METHOD method_1070 createUpdatePacket ()Lnet/minecraft/class_169;
+	METHOD method_1075 getBlock ()Lnet/minecraft/class_17;
+	METHOD method_1077 readNbt (Lnet/minecraft/class_8;)V
+		ARG 1 nbt
+	METHOD method_1078 writeNbt (Lnet/minecraft/class_8;)V
+		ARG 1 nbt
+	METHOD method_947 markDirty ()V

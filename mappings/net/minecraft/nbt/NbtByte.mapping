@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_360 net/minecraft/nbt/NbtByte
+	FIELD field_1356 value B
+	METHOD <init> (B)V
+		ARG 1 value

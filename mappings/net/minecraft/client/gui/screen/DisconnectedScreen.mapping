@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_158 net/minecraft/client/gui/screen/DisconnectedScreen
+	FIELD field_559 title Ljava/lang/String;
+	FIELD field_560 reason Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 title
+		ARG 2 reason
+		ARG 3 args

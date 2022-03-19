@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_89 net/minecraft/util/CharacterUtils
+	FIELD field_298 VALID_CHARACTERS Ljava/lang/String;
+	FIELD field_299 INVALID_CHARS_WORLD_NAME [C
+	METHOD method_350 loadValidCharacters ()Ljava/lang/String;

@@ -1,0 +1,68 @@
+CLASS net/minecraft/class_25 net/minecraft/util/math/Box
+	FIELD field_129 minX D
+	FIELD field_130 minY D
+	FIELD field_131 minZ D
+	FIELD field_132 maxX D
+	FIELD field_133 maxY D
+	FIELD field_134 maxZ D
+	FIELD field_135 cache Ljava/util/List;
+	FIELD field_136 cacheCount I
+	METHOD <init> (DDDDDD)V
+		ARG 1 x1
+		ARG 3 y1
+		ARG 5 z1
+		ARG 7 x2
+		ARG 9 y2
+		ARG 11 z2
+	METHOD method_101 getZOffset (Lnet/minecraft/class_25;D)D
+		ARG 1 box
+		ARG 2 z
+	METHOD method_102 shift (DDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_105 clearCache ()V
+	METHOD method_85 resetCacheCount ()V
+	METHOD method_86 add (DDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_87 create (DDDDDD)Lnet/minecraft/class_25;
+		ARG 0 x1
+		ARG 2 y1
+		ARG 4 z1
+		ARG 6 x2
+		ARG 8 y2
+		ARG 10 z2
+	METHOD method_90 intersects (Lnet/minecraft/class_25;)Z
+		ARG 1 box
+	METHOD method_91 getXOffset (Lnet/minecraft/class_25;D)D
+		ARG 1 box
+		ARG 2 x
+	METHOD method_93 expand (DDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_94 getOrCreate (DDDDDD)Lnet/minecraft/class_25;
+		ARG 0 x1
+		ARG 2 y1
+		ARG 4 z1
+		ARG 6 x2
+		ARG 8 y2
+		ARG 10 z2
+	METHOD method_96 copy (Lnet/minecraft/class_25;)V
+		ARG 1 from
+	METHOD method_97 getYOffset (Lnet/minecraft/class_25;D)D
+		ARG 1 box
+		ARG 2 y
+	METHOD method_98 move (DDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_99 set (DDDDDD)Lnet/minecraft/class_25;
+		ARG 1 x1
+		ARG 3 y1
+		ARG 5 z1
+		ARG 7 x2
+		ARG 9 y2
+		ARG 11 z2

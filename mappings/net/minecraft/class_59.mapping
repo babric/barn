@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_59
+	METHOD method_1156 loadEntitySkin (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_1157 unloadEntitySkin (Lnet/minecraft/class_57;)V
+		ARG 1 entity
