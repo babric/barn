@@ -3,5 +3,14 @@ CLASS net/minecraft/class_240 net/minecraft/network/NetworkHandler
 	METHOD method_1426 handlePlayerAction (Lnet/minecraft/class_228;)V
 	METHOD method_1434 handleClientCommand (Lnet/minecraft/class_431;)V
 	METHOD method_1435 handleUpdateSign (Lnet/minecraft/class_432;)V
+	METHOD method_1439 handleChunkData (Lnet/minecraft/class_6;)V
+	METHOD method_1470 handle (Lnet/minecraft/class_169;)V
+		ARG 1 packet
 	METHOD method_1471 handleHandshake (Lnet/minecraft/class_281;)V
-	METHOD method_1472 handleLoginHello (Lnet/minecraft/class_118;)V
+		ARG 1 packet
+	METHOD method_1472 handleHello (Lnet/minecraft/class_118;)V
+		ARG 1 packet
+	METHOD method_1473 onDisconnected (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 reason
+		ARG 2 objects
+	METHOD method_1474 isServerSide ()Z

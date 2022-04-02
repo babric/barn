@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_18 net/minecraft/world/World
 	FIELD field_180 isRemote Z
+	FIELD field_216 dimension Lnet/minecraft/class_50;
 	FIELD field_220 properties Lnet/minecraft/class_7;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_50;)V
 		ARG 1 world
@@ -20,7 +21,15 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 time
 	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z
 		ARG 1 box
+	METHOD method_178 addParticle (Ljava/lang/String;DDDDDD)V
 	METHOD method_211 getEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
+	METHOD method_217 getChunkData (IIIIII)[B
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 sizeX
+		ARG 5 sizeY
+		ARG 6 sizeZ
 	METHOD method_254 getSeed ()J
 	METHOD method_256 getTime ()J
 	METHOD method_258 getSpawnPos ()Lnet/minecraft/class_63;

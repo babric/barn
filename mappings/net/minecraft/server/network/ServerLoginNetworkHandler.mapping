@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_10 net/minecraft/server/network/ServerLoginNetworkHandler
+	FIELD field_353 LOGGER Ljava/util/logging/Logger;
+	FIELD field_354 connection Lnet/minecraft/class_117;
+	FIELD field_355 closed Z
+	FIELD field_356 random Ljava/util/Random;
+	FIELD field_357 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_358 loginTicks I
+	FIELD field_359 username Ljava/lang/String;
+	FIELD field_360 loginPacket Lnet/minecraft/class_118;
+	FIELD field_361 serverId Ljava/lang/String;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/net/Socket;Ljava/lang/String;)V
+		ARG 1 server
+		ARG 2 socket
+	METHOD method_414 tick ()V
+	METHOD method_417 disconnect (Ljava/lang/String;)V
+		ARG 1 reason
+	METHOD method_418 getConnectionInfo ()Ljava/lang/String;
+	METHOD method_419 accept (Lnet/minecraft/class_118;)V
+		ARG 1 packet
+	CLASS 1 AuthThread
+		FIELD field_362 loginPacket Lnet/minecraft/class_118;
+		FIELD field_363 networkHandler Lnet/minecraft/class_10;
+		METHOD run run ()V

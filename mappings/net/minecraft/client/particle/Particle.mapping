@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_77 net/minecraft/client/particle/Particle
+	FIELD field_2639 maxAge I
+	FIELD field_2640 scale F
+	FIELD field_2642 red F
+	FIELD field_2643 green F
+	FIELD field_2644 blue F
+	METHOD <init> (Lnet/minecraft/class_18;DDDDDD)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 velocityX
+		ARG 10 velocityY
+		ARG 12 velocityZ

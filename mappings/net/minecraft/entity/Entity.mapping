@@ -15,19 +15,37 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1608 prevYaw F
 	FIELD field_1609 prevPitch F
 	FIELD field_1610 boundingBox Lnet/minecraft/class_25;
+	FIELD field_1614 air I
+	FIELD field_1615 fireImmune Z
 	FIELD field_1630 dead Z
+	FIELD field_1632 spacingXZ F
+	FIELD field_1633 spacingY F
+	FIELD field_1644 random Ljava/util/Random;
+	FIELD field_1647 fire I
+	FIELD field_1648 maxAir I
 	FIELD field_1652 skinUrl Ljava/lang/String;
 	FIELD field_1653 capeUrl Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/class_18;)V
 		ARG 1 world
 	METHOD method_1316 updateCapeUrl ()V
+	METHOD method_1317 baseTick ()V
 	METHOD method_1318 isAlive ()Z
+	METHOD method_1321 setBoundingBoxSpacing (FF)V
+		ARG 1 spacingXZ
+		ARG 2 spacingY
 	METHOD method_1328 isInFluid (Lnet/minecraft/class_15;)Z
 	METHOD method_1346 write (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_1348 read (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
+	METHOD method_1355 damage (Lnet/minecraft/class_57;I)Z
 	METHOD method_1363 readtNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_1368 writeNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
+	METHOD method_1370 tick ()V
+	METHOD method_1371 move (DDD)V
+		ARG 1 dx
+		ARG 3 dy
+		ARG 5 dz
+	METHOD method_1386 markDead ()V

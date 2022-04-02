@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_11 net/minecraft/server/network/ServerPlayNetworkHandler
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_117;Lnet/minecraft/class_69;)V
+		ARG 1 server
+		ARG 2 connection

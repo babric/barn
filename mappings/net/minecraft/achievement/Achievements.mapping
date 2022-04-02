@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_23 net/minecraft/achievement/Achievements
+	FIELD field_112 ACHIEVEMENTS Ljava/util/List;
+	FIELD field_113 OPEN_INVENTORY Lnet/minecraft/class_24;
+	FIELD field_114 MINE_WOOD Lnet/minecraft/class_24;
+	FIELD field_115 CRAFT_WORKBENCH Lnet/minecraft/class_24;
+	FIELD field_116 CRAFT_PICKAXE Lnet/minecraft/class_24;
+	FIELD field_117 CRAFT_FURNACE Lnet/minecraft/class_24;
+	FIELD field_118 ACQUIRE_IRON Lnet/minecraft/class_24;
+	FIELD field_119 CRAFT_HOE Lnet/minecraft/class_24;
+	FIELD field_120 CRAFT_BREAD Lnet/minecraft/class_24;
+	FIELD field_121 CRAFT_CAKE Lnet/minecraft/class_24;
+	FIELD field_122 CRAFT_STONE_PICKAXE Lnet/minecraft/class_24;
+	FIELD field_123 COOK_FISH Lnet/minecraft/class_24;
+	FIELD field_124 CRAFT_RAIL Lnet/minecraft/class_24;
+	FIELD field_125 CRAFT_SWORD Lnet/minecraft/class_24;
+	FIELD field_126 KILL_ENEMY Lnet/minecraft/class_24;
+	FIELD field_127 KILL_COW Lnet/minecraft/class_24;
+	FIELD field_128 FLY_PIG Lnet/minecraft/class_24;

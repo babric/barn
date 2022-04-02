@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_169 net/minecraft/network/Packet
+	FIELD field_906 worldPacket Z
 	METHOD method_798 size ()I
 	METHOD method_801 (Lnet/minecraft/class_169;Ljava/io/DataOutputStream;)V
 		ARG 0 packet

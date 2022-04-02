@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_9
+	FIELD field_28 LOGGER Ljava/util/logging/Logger;
+	FIELD field_30 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_31 socket Ljava/net/ServerSocket;
+	FIELD field_32 thread Ljava/lang/Thread;

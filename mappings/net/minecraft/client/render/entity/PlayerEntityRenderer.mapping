@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_86 net/minecraft/client/render/entity/PlayerEntityRenderer
 	FIELD field_294 bipedModel Lnet/minecraft/class_87;
+	METHOD method_345 renderHand ()V
