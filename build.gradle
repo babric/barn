@@ -52,6 +52,10 @@ if (ENV.BRANCH_NAME) {
 repositories {
 	mavenCentral()
 	maven {
+		name "Babric Repository"
+		url "https://maven.glass-launcher.net/babric/"
+	}
+	maven {
 		name "Fabric Repository"
 		url "https://maven.fabricmc.net"
 	}
