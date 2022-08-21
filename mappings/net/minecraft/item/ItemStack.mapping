@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 	FIELD field_751 count I
+	FIELD field_752 bobbingAnimationTime I
 	FIELD field_753 itemId I
 	FIELD field_754 damage I
 	METHOD <init> (III)V
@@ -29,23 +30,56 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 	METHOD method_694 getItem ()Lnet/minecraft/class_124;
 	METHOD method_695 split (I)Lnet/minecraft/class_31;
 		ARG 1 count
+	METHOD method_696 postMine (IIIILnet/minecraft/class_54;)V
+		ARG 1 blockId
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 miner
 	METHOD method_697 damage (ILnet/minecraft/class_57;)V
 		ARG 1 amount
 		ARG 2 entity
+	METHOD method_698 use (Lnet/minecraft/class_18;Lnet/minecraft/class_54;)Lnet/minecraft/class_31;
+		ARG 1 world
+		ARG 2 user
+	METHOD method_699 inventoryTick (Lnet/minecraft/class_18;Lnet/minecraft/class_57;IZ)V
+		ARG 1 world
+		ARG 2 entity
+		ARG 3 slot
+		ARG 4 selected
+	METHOD method_701 useOnBlock (Lnet/minecraft/class_54;Lnet/minecraft/class_18;IIII)Z
+		ARG 1 player
+		ARG 2 world
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 side
 	METHOD method_702 isItemEqual (Lnet/minecraft/class_31;)Z
 		ARG 1 stack
 	METHOD method_703 areEqual (Lnet/minecraft/class_31;Lnet/minecraft/class_31;)Z
 		ARG 0 left
 		ARG 1 right
+	METHOD method_704 useOnEntity (Lnet/minecraft/class_127;)V
+		ARG 1 entity
+	METHOD method_705 postHit (Lnet/minecraft/class_127;Lnet/minecraft/class_54;)V
+		ARG 1 target
+		ARG 2 attacker
 	METHOD method_706 writeNbt (Lnet/minecraft/class_8;)Lnet/minecraft/class_8;
 		ARG 1 nbt
+	METHOD method_708 getMiningSpeedMultiplier (Lnet/minecraft/class_17;)F
+		ARG 1 block
 	METHOD method_709 getMaxCount ()I
 	METHOD method_710 setDamage (I)V
 		ARG 1 damage
+	METHOD method_711 onCraft (Lnet/minecraft/class_18;Lnet/minecraft/class_54;)V
+		ARG 1 world
+		ARG 2 player
 	METHOD method_712 clone (Lnet/minecraft/class_31;)Lnet/minecraft/class_31;
 		ARG 0 stack
 	METHOD method_713 readNbt (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
+	METHOD method_714 isSuitableFor (Lnet/minecraft/class_17;)Z
+		ARG 1 block
 	METHOD method_715 isStackable ()Z
 	METHOD method_716 equals (Lnet/minecraft/class_31;)Z
 		ARG 1 stack

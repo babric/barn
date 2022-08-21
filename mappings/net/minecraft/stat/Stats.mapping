@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_217 net/minecraft/stat/Stats
+	FIELD field_809 CRAFTED [Lnet/minecraft/class_139;
+	FIELD field_810 USED [Lnet/minecraft/class_139;
+	FIELD field_811 BROKEN [Lnet/minecraft/class_139;

@@ -12,6 +12,7 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerEntity
 	FIELD field_529 dimensionId I
 	FIELD field_536 sleeping Z
 	METHOD method_481 getScore ()I
+	METHOD method_488 increaseStat (Lnet/minecraft/class_139;I)V
 	METHOD method_492 respawn ()V
 	METHOD method_493 closeScreen ()V
 	METHOD method_501 dropSelectedItem ()V
