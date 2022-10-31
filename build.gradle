@@ -176,7 +176,7 @@ task downloadIntermediaryV2(type: Download) {
 	}
 }
 
-task mapClientIntermediaryJar(type: MapJarTask, dependsOn: [downloadMinecraftClientJar]) {
+task mapClientIntermediaryJar(type: MapJarTask, dependsOn: [downloadIntermediary, downloadMinecraftClientJar]) {
 	group = mapJarGroup
 	output = clientIntermediaryJar
 	input = downloadMinecraftClientJar.outputFile
@@ -186,7 +186,7 @@ task mapClientIntermediaryJar(type: MapJarTask, dependsOn: [downloadMinecraftCli
 	to = 'intermediary'
 }
 
-task mapServerIntermediaryJar(type: MapJarTask, dependsOn: [downloadMinecraftServerJar]) {
+task mapServerIntermediaryJar(type: MapJarTask, dependsOn: [downloadIntermediary, downloadMinecraftServerJar]) {
 	group = mapJarGroup
 	output = serverIntermediaryJar
 	input = downloadMinecraftServerJar.outputFile
@@ -218,7 +218,7 @@ task invertIntermediary(dependsOn: downloadIntermediary, type: FileOutput) {
 		String[] v1Args = [
 				v1Input.getAbsolutePath(),
 				output.getAbsolutePath(),
-				"intermediary", "official"
+				"intermediary", "glue", "server", "client"
 		]
 
 		new CommandReorderTiny().run(v1Args)
@@ -240,7 +240,7 @@ task invertIntermediaryv2(dependsOn: downloadIntermediaryV2, type: FileOutput) {
 		String[] v2Args = [
 				v2Input.getAbsolutePath(),
 				output.getAbsolutePath(),
-				"intermediary", "official"
+				"intermediary", "glue", "server", "client"
 		]
 
 		new CommandReorderTinyV2().run(v2Args)
