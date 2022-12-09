@@ -395,7 +395,7 @@ task tinyJar(type: Jar, dependsOn: mergeTiny) {
 
 task compressTiny(dependsOn: [tinyJar, mergeTiny], type: FileOutput) {
 	group = buildMappingGroup
-	def outputFile = new File(libs, "yarn-tiny-${yarnVersion}.gz")
+	def outputFile = new File(libs, "barn-tiny-${yarnVersion}.gz")
 	outputs.file(outputFile)
 	output = outputFile
 
