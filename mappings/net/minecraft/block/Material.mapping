@@ -10,3 +10,4 @@ CLASS net/minecraft/class_15 net/minecraft/block/Material
 	FIELD field_985 WATER Lnet/minecraft/class_15;
 	FIELD field_986 LAVA Lnet/minecraft/class_15;
 	FIELD field_987 LEAVES Lnet/minecraft/class_15;
+	FIELD field_990 WOOL Lnet/minecraft/class_15;

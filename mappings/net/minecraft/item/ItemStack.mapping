@@ -29,7 +29,7 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 	METHOD method_694 getItem ()Lnet/minecraft/class_124;
 	METHOD method_695 split (I)Lnet/minecraft/class_31;
 		ARG 1 count
-	METHOD method_697 damage (ILnet/minecraft/class_57;)V
+	METHOD method_697 damageEntity (ILnet/minecraft/class_57;)V
 		ARG 1 amount
 		ARG 2 entity
 	METHOD method_702 isItemEqual (Lnet/minecraft/class_31;)Z
@@ -37,6 +37,9 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 	METHOD method_703 areEqual (Lnet/minecraft/class_31;Lnet/minecraft/class_31;)Z
 		ARG 0 left
 		ARG 1 right
+	METHOD method_705 (Lnet/minecraft/class_127;Lnet/minecraft/class_54;)V
+		ARG 1 entity
+		ARG 2 player
 	METHOD method_706 writeNbt (Lnet/minecraft/class_8;)Lnet/minecraft/class_8;
 		ARG 1 nbt
 	METHOD method_709 getMaxCount ()I

@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_18 net/minecraft/world/World
 	FIELD field_180 isRemote Z
 	FIELD field_216 dimension Lnet/minecraft/class_50;
+	FIELD field_219 dimensionData Lnet/minecraft/class_52;
 	FIELD field_220 properties Lnet/minecraft/class_7;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_50;)V
 		ARG 1 world
@@ -17,12 +18,30 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 2 name
 		ARG 3 dimension
 		ARG 4 seed
+	METHOD method_150 playSound (DDDLjava/lang/String;FF)V
 	METHOD method_159 setTime (J)V
 		ARG 1 time
 	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z
 		ARG 1 box
+	METHOD method_172 (Lnet/minecraft/class_54;IIII)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_178 addParticle (Ljava/lang/String;DDDDDD)V
+	METHOD method_200 (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 id
+	METHOD method_201 (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_211 getEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
+	METHOD method_215 (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_217 getChunkData (IIIIII)[B
 		ARG 1 x
 		ARG 2 y
@@ -30,6 +49,27 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 4 sizeX
 		ARG 5 sizeY
 		ARG 6 sizeZ
+	METHOD method_223 (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_229 setBlock (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 id
+	METHOD method_235 (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_243 (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_253 (IIII)V
+		ARG 1 x
+		ARG 2 t
+		ARG 3 z
 	METHOD method_254 getSeed ()J
 	METHOD method_256 getTime ()J
 	METHOD method_258 getSpawnPos ()Lnet/minecraft/class_63;
