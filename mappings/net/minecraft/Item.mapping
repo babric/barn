@@ -130,9 +130,9 @@ CLASS net/minecraft/class_124 net/minecraft/Item
 		ARG 1 itemStack
 	METHOD method_441 getTexturePosition (I)I
 		ARG 1 id
-	METHOD method_442 (Lnet/minecraft/class_31;)Ljava/lang/String;
+	METHOD method_442 getTranslationKey (Lnet/minecraft/class_31;)Ljava/lang/String;
 		ARG 1 stack
-	METHOD method_443 setName ()Ljava/lang/String;
+	METHOD method_443 getTranslationKey ()Ljava/lang/String;
 	METHOD method_444 useOnBlock (Lnet/minecraft/class_31;Lnet/minecraft/class_54;Lnet/minecraft/class_18;IIII)Z
 		ARG 1 itemStack
 		ARG 2 player
