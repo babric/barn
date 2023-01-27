@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_223 net/minecraft/PistonBlock
-	FIELD field_844 isSticky Z
+	FIELD field_844 sticky Z
 	METHOD <init> (IIZ)V
 		ARG 1 id
 		ARG 2 textureId
-		ARG 3 isSticky
+		ARG 3 sticky

@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_291 net/minecraft/OreBlock
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 textureId

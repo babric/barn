@@ -1,8 +1,9 @@
 CLASS net/minecraft/class_421 net/minecraft/FurnaceBlock
-	FIELD field_1683 isLit Z
+	FIELD field_1682 random Ljava/util/Random;
+	FIELD field_1683 lit Z
 	METHOD <init> (IZ)V
 		ARG 1 id
-		ARG 2 isLit
+		ARG 2 lit
 	METHOD method_1403 (ZLnet/minecraft/class_18;III)V
 		ARG 1 world
 		ARG 2 x

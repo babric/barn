@@ -43,7 +43,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	FIELD field_1862 REDSTONE_ORE Lnet/minecraft/class_17;
 	FIELD field_1863 LIT_REDSTONE_ORE Lnet/minecraft/class_17;
 	FIELD field_1864 REDSTONE_TORCH Lnet/minecraft/class_17;
-	FIELD field_1865 LIT_RESTONE_TORCH Lnet/minecraft/class_17;
+	FIELD field_1865 LIT_REDSTONE_TORCH Lnet/minecraft/class_17;
 	FIELD field_1866 BUTTON Lnet/minecraft/class_17;
 	FIELD field_1867 SNOW Lnet/minecraft/class_17;
 	FIELD field_1868 ICE Lnet/minecraft/class_17;
@@ -93,6 +93,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	FIELD field_1913 TRAPDOOR Lnet/minecraft/class_17;
 	FIELD field_1914 textureId I
 	FIELD field_1915 id I
+	FIELD field_1916 hardness F
 	FIELD field_1917 blastResistance F
 	FIELD field_1926 soundGroup Lnet/minecraft/class_475;
 	FIELD field_1928 DEFAULT_SOUND Lnet/minecraft/class_475;
@@ -124,33 +125,88 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 entity
 	METHOD method_1562 (Lnet/minecraft/class_18;IIILnet/minecraft/class_25;Ljava/util/ArrayList;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 		ARG 5 box
 	METHOD method_1563 (Lnet/minecraft/class_18;IIIII)V
 		ARG 1 world
+	METHOD method_1564 (Lnet/minecraft/class_18;IIILnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
+		ARG 1 word
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1566 (Lnet/minecraft/class_18;III)Z
+		ARG 1 world
+	METHOD method_1567 (Lnet/minecraft/class_18;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1568 (Lnet/minecraft/class_14;IIII)Z
 		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1570 (Lnet/minecraft/class_18;IIII)Z
+		ARG 1 world
 	METHOD method_1572 (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;Lnet/minecraft/class_26;)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+	METHOD method_1573 (Lnet/minecraft/class_14;IIII)Z
+		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1580 setSoundGroup (Lnet/minecraft/class_475;)Lnet/minecraft/class_17;
 		ARG 1 soundGroup
+	METHOD method_1582 (Lnet/minecraft/class_54;)F
+		ARG 1 player
 	METHOD method_1583 setTranslationKey (Ljava/lang/String;)Lnet/minecraft/class_17;
 		ARG 1 name
 	METHOD method_1585 setBlastResistance (F)Lnet/minecraft/class_17;
 	METHOD method_1587 setHardness (F)Lnet/minecraft/class_17;
+		ARG 1 hardness
+	METHOD method_1592 (Lnet/minecraft/class_18;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1594 setUnbreakable ()Lnet/minecraft/class_17;
+	METHOD method_1595 getHardness ()F
 	METHOD method_1596 getTranslatedName ()Ljava/lang/String;
 	METHOD method_1597 getTranslationKey ()Ljava/lang/String;
+	METHOD method_1600 (Lnet/minecraft/class_14;III)I
+		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1601 (ILjava/util/Random;)I
+		ARG 2 random
 	METHOD method_1602 (Lnet/minecraft/class_18;IIILjava/util/Random;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 random
+	METHOD method_1603 (Ljava/util/Random;)I
+		ARG 1 random
 	METHOD method_1604 (Lnet/minecraft/class_14;III)F
 		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1606 (Lnet/minecraft/class_18;IIII)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1607 getTexture (I)I
 		ARG 1 side
 	METHOD method_1608 onUse (Lnet/minecraft/class_18;IIILnet/minecraft/class_54;)Z
@@ -159,6 +215,12 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 player
+	METHOD method_1609 (Lnet/minecraft/class_18;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 id
 	METHOD method_1610 onHit (Lnet/minecraft/class_18;IIILnet/minecraft/class_54;)V
 		ARG 1 world
 		ARG 2 x
@@ -172,10 +234,24 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 4 z
 	METHOD method_1612 (Lnet/minecraft/class_18;IIII)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1613 (Lnet/minecraft/class_18;III)V
 		ARG 1 world
 	METHOD method_1614 (Lnet/minecraft/class_18;IIILnet/minecraft/class_127;)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1615 (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+	METHOD method_1616 (Lnet/minecraft/class_14;III)V
+		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -190,16 +266,25 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 side
+	METHOD method_1622 (Lnet/minecraft/class_18;III)Lnet/minecraft/class_25;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1624 getBoundingBox (Lnet/minecraft/class_18;III)Lnet/minecraft/class_25;
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_1625 (Lnet/minecraft/class_18;IIIIF)V
+		ARG 1 world
 	METHOD method_1626 getTextureId (Lnet/minecraft/class_14;IIII)I
 		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 side
 	METHOD method_1627 getTexture (II)I
 		ARG 1 side
 		ARG 2 meta
