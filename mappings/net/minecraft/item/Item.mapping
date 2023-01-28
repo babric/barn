@@ -112,11 +112,11 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 	FIELD field_486 STONE_SHOVEL Lnet/minecraft/class_124;
 	FIELD field_487 STONE_PICKAXE Lnet/minecraft/class_124;
 	FIELD field_488 STONE_HATCHET Lnet/minecraft/class_124;
-    FIELD field_489 DIAMOND_SWORD Lnet/minecraft/class_124;
-    FIELD field_490 DIAMOND_SHOVEL Lnet/minecraft/class_124;
-    FIELD field_491 DIAMOND_PICKAXE Lnet/minecraft/class_124;
+	FIELD field_489 DIAMOND_SWORD Lnet/minecraft/class_124;
+	FIELD field_490 DIAMOND_SHOVEL Lnet/minecraft/class_124;
+	FIELD field_491 DIAMOND_PICKAXE Lnet/minecraft/class_124;
 	METHOD <init> (I)V
-    	ARG 1 id
+		ARG 1 id
 	METHOD method_437 postMine (Lnet/minecraft/class_31;IIIILnet/minecraft/class_127;)Z
 		ARG 1 stack
 		ARG 2 blockId
@@ -139,8 +139,8 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 	METHOD method_446 postHit (Lnet/minecraft/class_31;Lnet/minecraft/class_127;Lnet/minecraft/class_127;)Z
 		ARG 1 stack
 	METHOD method_447 getDamageOnEntity (Lnet/minecraft/class_57;)I
-    	ARG 1 entity
-    METHOD method_448 getIsHandheld ()Z
+		ARG 1 entity
+	METHOD method_448 getIsHandheld ()Z
 	METHOD method_450 isSuitableFor (Lnet/minecraft/class_17;)Z
 		ARG 1 block
 	METHOD method_451 use (Lnet/minecraft/class_31;Lnet/minecraft/class_18;Lnet/minecraft/class_54;)Lnet/minecraft/class_31;
@@ -148,10 +148,10 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 2 world
 		ARG 3 user
 	METHOD method_452 setTexturePosition (II)Lnet/minecraft/class_124;
-    	ARG 1 x
-    	ARG 2 y
-    METHOD method_453 setCraftingReturnItem (Lnet/minecraft/class_124;)Lnet/minecraft/class_124;
-    	ARG 1 item
+		ARG 1 x
+		ARG 2 y
+	METHOD method_453 setCraftingReturnItem (Lnet/minecraft/class_124;)Lnet/minecraft/class_124;
+		ARG 1 item
 	METHOD method_454 inventoryTick (Lnet/minecraft/class_31;Lnet/minecraft/class_18;Lnet/minecraft/class_57;IZ)V
 		ARG 1 stack
 		ARG 2 world
@@ -162,9 +162,9 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 1 stack
 		ARG 2 entity
 	METHOD method_456 setTranslationKey (Ljava/lang/String;)Lnet/minecraft/class_124;
-        ARG 1 key
+		ARG 1 key
 	METHOD method_457 setFuel (Z)Lnet/minecraft/class_124;
-    	ARG 1 isFuel
+		ARG 1 isFuel
 	METHOD method_459 getMaxCount ()I
 	METHOD method_460 setMaxCount (I)Lnet/minecraft/class_124;
 		ARG 1 maxCount
