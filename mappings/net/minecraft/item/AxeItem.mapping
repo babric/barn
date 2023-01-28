@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_420 net/minecraft/item/AxeItem
+	FIELD field_1681 axeEffectiveBlocks [Lnet/minecraft/class_17;
+	METHOD <init> (ILnet/minecraft/class_428;)V
+		ARG 1 id
+		ARG 2 toolMaterial

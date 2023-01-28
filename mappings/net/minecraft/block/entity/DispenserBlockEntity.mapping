@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_137 net/minecraft/block/entity/DispenserBlockEntity
+	FIELD field_714 inventory [Lnet/minecraft/class_31;
+	FIELD field_715 random Ljava/util/Random;

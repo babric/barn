@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_492 net/minecraft/FarmlandBlock
-	METHOD <init> (I)V
-		ARG 1 id

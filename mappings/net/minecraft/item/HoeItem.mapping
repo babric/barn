@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_249 net/minecraft/item/HoeItem
+	METHOD <init> (ILnet/minecraft/class_428;)V
+		ARG 1 id
+		ARG 2 toolMaterial

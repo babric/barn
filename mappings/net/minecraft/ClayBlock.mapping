@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_400 net/minecraft/ClayBlock
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 textureId

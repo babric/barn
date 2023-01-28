@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_530 net/minecraft/LeverBlock
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 textureId

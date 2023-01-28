@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_460 net/minecraft/SignBlock
-	FIELD field_1760 standing Z
-	METHOD <init> (ILjava/lang/Class;Z)V
-		ARG 1 id
-		ARG 3 standing

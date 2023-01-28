@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_416 net/minecraft/block/StairsBlock
+	METHOD <init> (ILnet/minecraft/class_17;)V
+		ARG 1 id
+		ARG 2 block

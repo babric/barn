@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_487 net/minecraft/block/LogBlock
+	METHOD <init> (I)V
+		ARG 1 id

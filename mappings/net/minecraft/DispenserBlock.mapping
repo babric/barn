@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_526 net/minecraft/DispenserBlock
-	METHOD <init> (I)V
-		ARG 1 id

@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_510 net/minecraft/block/RepeaterBlock
+	FIELD field_2125 lit Z
+	METHOD <init> (IZ)V
+		ARG 1 id
+		ARG 2 lit

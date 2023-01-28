@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_74 net/minecraft/WorkbenchBlock
-	METHOD <init> (I)V
-		ARG 1 id

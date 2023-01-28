@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_396 net/minecraft/block/RedstoneOreBlock
+	FIELD field_1527 lit Z
+	METHOD <init> (IIZ)V
+		ARG 1 id
+		ARG 2 textureId
+		ARG 3 lit

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_383 net/minecraft/block/CobwebBlock
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 texturePosition
