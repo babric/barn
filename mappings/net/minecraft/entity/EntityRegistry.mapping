@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_206 net/minecraft/entity/EntityRegistry
+	FIELD field_757 idToClass Ljava/util/Map;
+	FIELD field_758 classToId Ljava/util/Map;
+	FIELD field_759 rawIdToClass Ljava/util/Map;
+	FIELD field_760 classToRawId Ljava/util/Map;
+	METHOD method_730 getEntityFromNbt (Lnet/minecraft/class_8;Lnet/minecraft/class_18;)Lnet/minecraft/class_57;
+		ARG 0 nbt
+		ARG 1 world
+	METHOD method_731 register (Ljava/lang/Class;Ljava/lang/String;I)V
+		ARG 0 entityClass
+		ARG 1 id
+		ARG 2 rawId
+	METHOD method_732 create (Ljava/lang/String;Lnet/minecraft/class_18;)Lnet/minecraft/class_57;
+		ARG 0 id
+		ARG 1 world
+	METHOD method_733 getRawId (Lnet/minecraft/class_57;)I
+		ARG 0 entity
+	METHOD method_734 getId (Lnet/minecraft/class_57;)Ljava/lang/String;
+		ARG 0 entity
+	METHOD method_735 create (ILnet/minecraft/class_18;)Lnet/minecraft/class_57;
+		ARG 0 rawId
+		ARG 1 world
