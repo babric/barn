@@ -1,0 +1,56 @@
+CLASS net/minecraft/class_66 net/minecraft/client/render/chunk/ChunkBuilder
+	FIELD field_224 blockEntities Ljava/util/List;
+	FIELD field_225 baseRenderList I
+	FIELD field_226 tessellator Lnet/minecraft/class_67;
+	FIELD field_227 built Z
+	FIELD field_228 currentBlockEntities Ljava/util/List;
+	FIELD field_229 world Lnet/minecraft/class_18;
+	FIELD field_230 chunkUpdates I
+	FIELD field_231 x I
+	FIELD field_232 y I
+	FIELD field_233 z I
+	FIELD field_234 sizeX I
+	FIELD field_235 sizeY I
+	FIELD field_236 sizeZ I
+	FIELD field_237 cameraOffsetX I
+	FIELD field_238 cameraOffsetY I
+	FIELD field_239 cameraOffsetZ I
+	FIELD field_240 renderX I
+	FIELD field_241 renderY I
+	FIELD field_242 renderZ I
+	FIELD field_243 inFrustum Z
+	FIELD field_244 renderLayerEmpty [Z
+	FIELD field_245 centerX I
+	FIELD field_246 centerY I
+	FIELD field_247 centerZ I
+	FIELD field_248 radius F
+	FIELD field_249 invalidated Z
+	FIELD field_250 cullingBox Lnet/minecraft/class_25;
+	FIELD field_251 id I
+	FIELD field_252 unoccluded Z
+	FIELD field_253 occlusionQueryReady Z
+	FIELD field_254 occlusionQueryId I
+	METHOD <init> (Lnet/minecraft/class_18;Ljava/util/List;IIIII)V
+		ARG 1 world
+		ARG 2 blockEntitiesUpdateList
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 size
+		ARG 7 baseRenderListId
+	METHOD method_296 rebuild ()V
+	METHOD method_297 getRenderListId (I)I
+		ARG 1 layerId
+	METHOD method_298 setPosition (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_299 squaredDistanceTo (Lnet/minecraft/class_57;)F
+		ARG 1 entity
+	METHOD method_300 updateFrustum (Lnet/minecraft/class_68;)V
+	METHOD method_301 reset ()V
+	METHOD method_302 close ()V
+	METHOD method_303 renderOcclusionBox ()V
+	METHOD method_304 hasNoGeometry ()Z
+	METHOD method_305 invalidate ()V
+	METHOD method_306 translateToRenderPosition ()V
