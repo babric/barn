@@ -2,6 +2,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	FIELD field_180 isRemote Z
 	FIELD field_216 dimension Lnet/minecraft/class_50;
 	FIELD field_220 properties Lnet/minecraft/class_7;
+	FIELD field_222 persistentStateManager Lnet/minecraft/class_53;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_50;)V
 		ARG 1 world
 		ARG 2 dimension
@@ -21,7 +22,15 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 time
 	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z
 		ARG 1 box
+	METHOD method_176 getOrCreateState (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/class_58;
+		ARG 1 stateClass
+		ARG 2 id
 	METHOD method_178 addParticle (Ljava/lang/String;DDDDDD)V
+	METHOD method_180 setState (Ljava/lang/String;Lnet/minecraft/class_58;)V
+		ARG 1 id
+		ARG 2 state
+	METHOD method_208 getIdCount (Ljava/lang/String;)I
+		ARG 1 id
 	METHOD method_211 getEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
 	METHOD method_217 getChunkData (IIIIII)[B
 		ARG 1 x

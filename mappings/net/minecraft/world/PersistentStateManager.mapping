@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_53 net/minecraft/world/PersistentStateManager
+	FIELD field_551 loadedStatesById Ljava/util/Map;
+	FIELD field_552 loadedStates Ljava/util/List;
+	FIELD field_553 idCounts Ljava/util/Map;
+	METHOD method_523 save ()V
+	METHOD method_524 save (Lnet/minecraft/class_58;)V
+		ARG 1 state
+	METHOD method_525 getOrCreate (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/class_58;
+		ARG 1 stateClass
+		ARG 2 id
+	METHOD method_526 getIdCount (Ljava/lang/String;)I
+		ARG 1 id
+	METHOD method_527 set (Ljava/lang/String;Lnet/minecraft/class_58;)V
+		ARG 1 id
+		ARG 2 state
+	METHOD method_528 loadIdCounts ()V
