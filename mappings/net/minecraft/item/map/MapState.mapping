@@ -1,0 +1,43 @@
+CLASS net/minecraft/class_198 net/minecraft/item/map/MapState
+	FIELD field_720 centerX I
+	FIELD field_721 centerZ I
+	FIELD field_722 dimension B
+	FIELD field_723 scale B
+	FIELD field_724 colors [B
+	FIELD field_725 inventoryTicks I
+	FIELD field_726 updateTrackers Ljava/util/List;
+	FIELD field_727 icons Ljava/util/List;
+	FIELD field_728 updateTrackersByPlayer Ljava/util/Map;
+	METHOD method_666 markDirty (III)V
+		ARG 1 x
+		ARG 2 startZ
+		ARG 3 endZ
+	METHOD method_667 update (Lnet/minecraft/class_54;Lnet/minecraft/class_31;)V
+		ARG 1 player
+		ARG 2 stack
+	METHOD method_668 getPlayerMarkerPacket (Lnet/minecraft/class_31;Lnet/minecraft/class_18;Lnet/minecraft/class_54;)[B
+		ARG 1 stack
+		ARG 2 world
+		ARG 3 player
+	METHOD method_669 readUpdateData ([B)V
+		ARG 1 updateData
+	CLASS class_199 MapIcon
+		FIELD field_729 type B
+		FIELD field_730 x B
+		FIELD field_731 z B
+		FIELD field_732 rotation B
+		METHOD <init> (Lnet/minecraft/class_198;BBBB)V
+			ARG 2 type
+			ARG 3 x
+			ARG 4 z
+			ARG 5 rotation
+	CLASS class_200 PlayerUpdateTracker
+		FIELD field_734 player Lnet/minecraft/class_54;
+		FIELD field_735 startZ [I
+		FIELD field_736 endZ [I
+		FIELD field_739 colorsUpdateInterval I
+		FIELD field_740 iconsData [B
+		METHOD <init> (Lnet/minecraft/class_198;Lnet/minecraft/class_54;)V
+			ARG 2 player
+		METHOD method_670 getUpdateData (Lnet/minecraft/class_31;)[B
+			ARG 1 stack
