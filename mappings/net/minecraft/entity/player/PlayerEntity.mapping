@@ -12,12 +12,19 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerEntity
 	FIELD field_529 dimensionId I
 	FIELD field_536 sleeping Z
 	METHOD method_481 getScore ()I
+	METHOD method_484 (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_486 (Lnet/minecraft/class_134;)V
+		ARG 1 inventory
 	METHOD method_488 increaseStat (Lnet/minecraft/class_139;I)V
 		ARG 1 stat
 		ARG 2 amount
 	METHOD method_492 respawn ()V
 	METHOD method_493 closeScreen ()V
 	METHOD method_501 dropSelectedItem ()V
+	METHOD method_502 getHand ()Lnet/minecraft/class_31;
 	METHOD method_512 incrementStat (Lnet/minecraft/class_139;)V
 		ARG 1 stat
 	METHOD method_515 interact (Lnet/minecraft/class_57;)V

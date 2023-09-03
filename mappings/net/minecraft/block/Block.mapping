@@ -23,15 +23,273 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	FIELD field_1842 DETECTOR_RAIL Lnet/minecraft/class_17;
 	FIELD field_1843 STICKY_PISTON Lnet/minecraft/class_17;
 	FIELD field_1844 COBWEB Lnet/minecraft/class_17;
+	FIELD field_1845 TALL_GRASS Lnet/minecraft/class_392;
+	FIELD field_1846 DEAD_BUSH Lnet/minecraft/class_204;
+	FIELD field_1847 translationKey Ljava/lang/String;
+	FIELD field_1848 CROP Lnet/minecraft/class_17;
+	FIELD field_1849 FARMLAND Lnet/minecraft/class_17;
+	FIELD field_1850 FURNACE Lnet/minecraft/class_17;
+	FIELD field_1851 LIT_FURNACE Lnet/minecraft/class_17;
 	FIELD field_1852 STANDING_SIGN Lnet/minecraft/class_17;
+	FIELD field_1853 DOOR Lnet/minecraft/class_17;
+	FIELD field_1854 LADDER Lnet/minecraft/class_17;
 	FIELD field_1855 RAIL Lnet/minecraft/class_17;
+	FIELD field_1856 STONE_STAIRS Lnet/minecraft/class_17;
+	FIELD field_1857 SIGN Lnet/minecraft/class_17;
+	FIELD field_1858 LEVER Lnet/minecraft/class_17;
+	FIELD field_1859 STONE_PRESSURE_PLATE Lnet/minecraft/class_17;
+	FIELD field_1860 IRON_DOOR Lnet/minecraft/class_17;
+	FIELD field_1861 WOODEN_PRESSURE_PLATE Lnet/minecraft/class_17;
+	FIELD field_1862 REDSTONE_ORE Lnet/minecraft/class_17;
+	FIELD field_1863 LIT_REDSTONE_ORE Lnet/minecraft/class_17;
+	FIELD field_1864 REDSTONE_TORCH Lnet/minecraft/class_17;
+	FIELD field_1865 LIT_REDSTONE_TORCH Lnet/minecraft/class_17;
+	FIELD field_1866 BUTTON Lnet/minecraft/class_17;
+	FIELD field_1867 SNOW Lnet/minecraft/class_17;
+	FIELD field_1868 ICE Lnet/minecraft/class_17;
+	FIELD field_1869 SNOW_BLOCK Lnet/minecraft/class_17;
+	FIELD field_1870 CACTUS Lnet/minecraft/class_17;
+	FIELD field_1871 CLAY Lnet/minecraft/class_17;
+	FIELD field_1872 SUGAR_CANE Lnet/minecraft/class_17;
+	FIELD field_1873 JUKEBOX Lnet/minecraft/class_17;
+	FIELD field_1874 PISTON Lnet/minecraft/class_17;
+	FIELD field_1875 PISTON_HEAD Lnet/minecraft/class_205;
+	FIELD field_1876 WOOL Lnet/minecraft/class_17;
+	FIELD field_1877 PISTON_EXTENSION Lnet/minecraft/class_469;
+	FIELD field_1878 DANDELION Lnet/minecraft/class_473;
+	FIELD field_1879 ROSE Lnet/minecraft/class_473;
+	FIELD field_1880 BROWN_MUSHROOM Lnet/minecraft/class_473;
+	FIELD field_1881 RED_MUSHROOM Lnet/minecraft/class_473;
+	FIELD field_1882 GOLD_BLOCK Lnet/minecraft/class_17;
+	FIELD field_1883 IRON_BLOCK Lnet/minecraft/class_17;
+	FIELD field_1884 DOUBLE_SLAB Lnet/minecraft/class_17;
+	FIELD field_1885 SLAB Lnet/minecraft/class_17;
+	FIELD field_1886 BRICKS Lnet/minecraft/class_17;
+	FIELD field_1887 TNT Lnet/minecraft/class_17;
+	FIELD field_1888 BOOKSHELF Lnet/minecraft/class_17;
+	FIELD field_1889 MOSSY_COBBLESTONE Lnet/minecraft/class_17;
+	FIELD field_1890 OBSIDIAN Lnet/minecraft/class_17;
+	FIELD field_1891 TORCH Lnet/minecraft/class_17;
+	FIELD field_1892 FIRE Lnet/minecraft/class_474;
+	FIELD field_1893 SPAWNER Lnet/minecraft/class_17;
+	FIELD field_1894 WOODEN_STAIRS Lnet/minecraft/class_17;
+	FIELD field_1895 CHEST Lnet/minecraft/class_17;
+	FIELD field_1896 REDSTONE_WIRE Lnet/minecraft/class_17;
+	FIELD field_1897 DIAMOND_ORE Lnet/minecraft/class_17;
+	FIELD field_1898 DIAMOND_BLOCK Lnet/minecraft/class_17;
 	FIELD field_1899 WORKBENCH Lnet/minecraft/class_17;
+	FIELD field_1900 material Lnet/minecraft/class_15;
+	FIELD field_1902 FENCE Lnet/minecraft/class_17;
+	FIELD field_1903 PUMPKIN Lnet/minecraft/class_17;
+	FIELD field_1904 NETHERRACK Lnet/minecraft/class_17;
+	FIELD field_1905 SOUL_SAND Lnet/minecraft/class_17;
+	FIELD field_1906 GLOWSTONE Lnet/minecraft/class_17;
 	FIELD field_1907 PORTAL Lnet/minecraft/class_207;
+	FIELD field_1908 JACK_O_LANTERN Lnet/minecraft/class_17;
+	FIELD field_1909 CAKE Lnet/minecraft/class_17;
+	FIELD field_1910 REPEATER Lnet/minecraft/class_17;
+	FIELD field_1911 LIT_REPEATER Lnet/minecraft/class_17;
+	FIELD field_1912 LOCKED_CHEST Lnet/minecraft/class_17;
+	FIELD field_1913 TRAPDOOR Lnet/minecraft/class_17;
+	FIELD field_1914 textureId I
 	FIELD field_1915 id I
+	FIELD field_1916 hardness F
+	FIELD field_1917 blastResistance F
+	FIELD field_1926 soundGroup Lnet/minecraft/class_475;
+	FIELD field_1928 DEFAULT_SOUND Lnet/minecraft/class_475;
+	FIELD field_1929 WOOD_STONE Lnet/minecraft/class_475;
+	FIELD field_1930 GRAVEL_SOUND Lnet/minecraft/class_475;
+	FIELD field_1931 DIRT_SOUND Lnet/minecraft/class_475;
+	FIELD field_1932 STONE_SOUND Lnet/minecraft/class_475;
+	FIELD field_1933 METAL_SOUND Lnet/minecraft/class_475;
+	FIELD field_1934 GLASS_SOUND Lnet/minecraft/class_475;
+	FIELD field_1935 WOOL_SOUND Lnet/minecraft/class_475;
+	FIELD field_1936 SAND_SOUND Lnet/minecraft/class_475;
 	FIELD field_1937 BLOCKS [Lnet/minecraft/class_17;
+	FIELD field_1940 blockHasEntity [Z
 	FIELD field_1945 STONE Lnet/minecraft/class_17;
 	FIELD field_1946 GRASS Lnet/minecraft/class_476;
 	FIELD field_1947 DIRT Lnet/minecraft/class_17;
 	FIELD field_1948 COBBLESTONE Lnet/minecraft/class_17;
 	FIELD field_1949 PLANKS Lnet/minecraft/class_17;
 	FIELD field_1950 SAPLING Lnet/minecraft/class_17;
+	METHOD <init> (IILnet/minecraft/class_15;)V
+		ARG 1 id
+		ARG 2 textureId
+		ARG 3 material
+	METHOD <init> (ILnet/minecraft/class_15;)V
+		ARG 1 id
+		ARG 2 material
+	METHOD method_1560 (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+	METHOD method_1562 (Lnet/minecraft/class_18;IIILnet/minecraft/class_25;Ljava/util/ArrayList;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 box
+	METHOD method_1563 (Lnet/minecraft/class_18;IIIII)V
+		ARG 1 world
+	METHOD method_1564 (Lnet/minecraft/class_18;IIILnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
+		ARG 1 word
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1566 (Lnet/minecraft/class_18;III)Z
+		ARG 1 world
+	METHOD method_1567 (Lnet/minecraft/class_18;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1568 (Lnet/minecraft/class_14;IIII)Z
+		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1570 (Lnet/minecraft/class_18;IIII)Z
+		ARG 1 world
+	METHOD method_1572 (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;Lnet/minecraft/class_26;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+	METHOD method_1573 (Lnet/minecraft/class_14;IIII)Z
+		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1580 setSoundGroup (Lnet/minecraft/class_475;)Lnet/minecraft/class_17;
+		ARG 1 soundGroup
+	METHOD method_1582 (Lnet/minecraft/class_54;)F
+		ARG 1 player
+	METHOD method_1583 setTranslationKey (Ljava/lang/String;)Lnet/minecraft/class_17;
+		ARG 1 name
+	METHOD method_1585 setBlastResistance (F)Lnet/minecraft/class_17;
+	METHOD method_1587 setHardness (F)Lnet/minecraft/class_17;
+		ARG 1 hardness
+	METHOD method_1592 (Lnet/minecraft/class_18;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1594 setUnbreakable ()Lnet/minecraft/class_17;
+	METHOD method_1595 getHardness ()F
+	METHOD method_1596 getTranslatedName ()Ljava/lang/String;
+	METHOD method_1597 getTranslationKey ()Ljava/lang/String;
+	METHOD method_1600 (Lnet/minecraft/class_14;III)I
+		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1601 (ILjava/util/Random;)I
+		ARG 2 random
+	METHOD method_1602 (Lnet/minecraft/class_18;IIILjava/util/Random;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
+	METHOD method_1603 (Ljava/util/Random;)I
+		ARG 1 random
+	METHOD method_1604 (Lnet/minecraft/class_14;III)F
+		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1606 (Lnet/minecraft/class_18;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1607 getTexture (I)I
+		ARG 1 side
+	METHOD method_1608 onUse (Lnet/minecraft/class_18;IIILnet/minecraft/class_54;)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 player
+	METHOD method_1609 (Lnet/minecraft/class_18;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 id
+	METHOD method_1610 onHit (Lnet/minecraft/class_18;IIILnet/minecraft/class_54;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 player
+	METHOD method_1611 (Lnet/minecraft/class_18;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1612 (Lnet/minecraft/class_18;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1613 (Lnet/minecraft/class_18;III)V
+		ARG 1 world
+	METHOD method_1614 (Lnet/minecraft/class_18;IIILnet/minecraft/class_127;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1615 (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+	METHOD method_1616 (Lnet/minecraft/class_14;III)V
+		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1617 (Lnet/minecraft/class_18;IIILjava/util/Random;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
+	METHOD method_1618 (Lnet/minecraft/class_14;IIII)Z
+		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 side
+	METHOD method_1622 (Lnet/minecraft/class_18;III)Lnet/minecraft/class_25;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1624 getBoundingBox (Lnet/minecraft/class_18;III)Lnet/minecraft/class_25;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1625 (Lnet/minecraft/class_18;IIIIF)V
+		ARG 1 world
+	METHOD method_1626 getTextureId (Lnet/minecraft/class_14;IIII)I
+		ARG 1 blockView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 side
+	METHOD method_1627 getTexture (II)I
+		ARG 1 side
+		ARG 2 meta
+	METHOD method_1630 (Lnet/minecraft/class_18;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

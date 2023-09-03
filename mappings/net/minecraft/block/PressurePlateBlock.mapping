@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_457 net/minecraft/block/PressurePlateBlock
+	METHOD <init> (IILnet/minecraft/class_389;Lnet/minecraft/class_15;)V
+		ARG 1 id
+		ARG 2 textureId
+		ARG 4 material

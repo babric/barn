@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_262 net/minecraft/item/SecondaryBlockItem
+	FIELD field_1062 blockId I
+	METHOD <init> (ILnet/minecraft/class_17;)V
+		ARG 1 id
+		ARG 2 block

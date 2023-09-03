@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_475 net/minecraft/sound/BlockSoundGroup
+	FIELD field_2598 soundName Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;FF)V
+		ARG 1 soundName
+	METHOD method_1978 getSound ()Ljava/lang/String;
+	METHOD method_1979 getBreakSound ()Ljava/lang/String;

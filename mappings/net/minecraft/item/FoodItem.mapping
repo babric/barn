@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_554 net/minecraft/item/FoodItem
+	METHOD <init> (IIZ)V
+		ARG 1 id

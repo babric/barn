@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_408 net/minecraft/block/RedstoneWireBlock
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 textureId

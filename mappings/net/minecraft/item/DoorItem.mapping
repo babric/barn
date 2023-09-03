@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_177 net/minecraft/item/DoorItem
+	FIELD field_617 material Lnet/minecraft/class_15;
+	METHOD <init> (ILnet/minecraft/class_15;)V
+		ARG 1 id
+		ARG 2 material

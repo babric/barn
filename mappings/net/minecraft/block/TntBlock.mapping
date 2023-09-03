@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_132 net/minecraft/block/TntBlock
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 textureId

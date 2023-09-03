@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_138 net/minecraft/block/entity/FurnaceBlockEntity
+	FIELD field_1566 burnTime I
+	FIELD field_1567 fuelTime I
+	FIELD field_1568 cookTime I
+	FIELD field_1569 inventory [Lnet/minecraft/class_31;
+	METHOD method_1280 getFuelTime (Lnet/minecraft/class_31;)I
+		ARG 1 itemStack

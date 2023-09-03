@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_534 net/minecraft/block/class_534
+	FIELD field_2231 x I
+	FIELD field_2232 y I
+	FIELD field_2233 z I
+	FIELD field_2234 time J
+	METHOD <init> (IIIJ)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 time

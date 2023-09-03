@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_553 net/minecraft/block/SlabBlock
+	FIELD field_2324 doubleSlab Z
+	METHOD <init> (IZ)V
+		ARG 1 id
+		ARG 2 doubleSlab

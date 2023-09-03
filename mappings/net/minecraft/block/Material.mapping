@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_15 net/minecraft/block/Material
+	FIELD field_1001 CLAY Lnet/minecraft/class_15;
+	FIELD field_1002 PUMPKIN Lnet/minecraft/class_15;
+	FIELD field_1003 NETHER_PORTAL Lnet/minecraft/class_15;
+	FIELD field_1004 CAKE Lnet/minecraft/class_15;
+	FIELD field_971 COBWEB Lnet/minecraft/class_15;
 	FIELD field_974 burnable Z
 	FIELD field_975 replaceable Z
 	FIELD field_979 AIR Lnet/minecraft/class_15;
@@ -10,3 +15,10 @@ CLASS net/minecraft/class_15 net/minecraft/block/Material
 	FIELD field_985 WATER Lnet/minecraft/class_15;
 	FIELD field_986 LAVA Lnet/minecraft/class_15;
 	FIELD field_987 LEAVES Lnet/minecraft/class_15;
+	FIELD field_989 SPONGE Lnet/minecraft/class_15;
+	FIELD field_990 WOOL Lnet/minecraft/class_15;
+	FIELD field_991 FIRE Lnet/minecraft/class_15;
+	FIELD field_992 SAND Lnet/minecraft/class_15;
+	FIELD field_995 TNT Lnet/minecraft/class_15;
+	METHOD method_894 isBurnable ()Z
+	METHOD method_904 setBurnable ()Lnet/minecraft/class_15;

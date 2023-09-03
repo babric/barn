@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_110 net/minecraft/block/ChestBlock
+	FIELD field_337 random Ljava/util/Random;
+	METHOD <init> (I)V
+		ARG 1 id

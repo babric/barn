@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_619 net/minecraft/block/RedstoneTorchBlock
+	FIELD field_2685 lit Z
+	METHOD <init> (IIZ)V
+		ARG 1 id
+		ARG 2 textureId
+		ARG 3 lit
+	METHOD method_2038 (Lnet/minecraft/class_18;IIIZ)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_2039 (Lnet/minecraft/class_18;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

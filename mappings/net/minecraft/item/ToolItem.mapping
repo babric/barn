@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_632 net/minecraft/item/ToolItem
+	FIELD field_2711 toolMaterial Lnet/minecraft/class_428;
+	FIELD field_2712 effectiveOnBlocks [Lnet/minecraft/class_17;
+	FIELD field_2713 miningSpeed F
+	FIELD field_2714 damage I
+	METHOD <init> (IILnet/minecraft/class_428;[Lnet/minecraft/class_17;)V
+		ARG 1 id
+		ARG 2 damageBoost
+		ARG 3 toolMaterial
+		ARG 4 effectiveOn
