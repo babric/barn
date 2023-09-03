@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_475 net/minecraft/block/BlockSoundGroup
+CLASS net/minecraft/class_475 net/minecraft/sound/BlockSoundGroup
 	FIELD field_2598 soundName Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;FF)V
 		ARG 1 soundName

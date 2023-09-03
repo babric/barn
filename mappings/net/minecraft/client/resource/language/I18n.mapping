@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_629 net/minecraft/Translator
+CLASS net/minecraft/class_629 net/minecraft/client/resource/language/I18n
 	FIELD field_2705 translations Lnet/minecraft/class_300;
 	METHOD method_2049 getTranslation (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 name

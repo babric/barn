@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_428 net/minecraft/ToolMaterial
+CLASS net/minecraft/class_428 net/minecraft/item/ToolMaterial
 	FIELD field_1691 DIAMOND Lnet/minecraft/class_428;
 	FIELD field_1693 miningLevel I
 	FIELD field_1694 durability I
